@@ -1,8 +1,9 @@
 <?php 
 include_once 'koneksi.php';
-include_once 'models/Kategori.php';
+include_once 'navbar/top.php';
 include_once 'index.php';
-
+include_once 'models/Kategori.php';
+include_once 'navbar/footer.php';
 ?>
 
 <div>
