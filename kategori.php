@@ -8,13 +8,13 @@ $data_kategori = $model->dataKategori();
   <main id="main" class="main">
 
     <div class="pagetitle">
-      <h1>Kategori Gejala</h1>
+      <h1>Kategori</h1>
       <nav>
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="index.html">Home</a></li>
           <li class="breadcrumb-item">Tables</li>
           <li class="breadcrumb-item active">Kategori Gejla</li>
-          <li class="breadcrumb-item active">Kategori Gejala</li>
+          <li class="breadcrumb-item active">Kategori</li>
         </ol>
       </nav>
     </div><!-- End Page Title -->

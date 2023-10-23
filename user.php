@@ -1,6 +1,6 @@
 <?php
 $model = new User();
-$data_gejala = $model->dataUser();
+$data_user = $model->dataUser();
 
 
 ?>
@@ -47,12 +47,12 @@ $data_gejala = $model->dataUser();
                     ?>
                      <tr>
                     <th scope="row"><?= $no ?></th>
-                    <td><?= $user['id']?></td>
+                    <!-- <td><?= $user['id']?></td> -->
                     <td><?= $user['nama']?></td>
                     <td><?= $user['umur']?></td>
                     <td><?= $user['jenis_kelamin']?></td>
                     <td><?= $user['password']?></td>
-                    <td><?= $user['role']?></td>
+                   
                   </tr>
                   <?php
                    $no ++;

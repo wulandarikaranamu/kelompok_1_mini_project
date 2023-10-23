@@ -45,9 +45,9 @@ $data_jawaban = $model->dataJawaban();
                     ?>
                      <tr>
                     <th scope="row"><?= $no ?></th>
-                    <td><?= $jawaban['pertanyaan_id']?></td>
+                    <td><?= $jawaban['pertanyaan']?></td>
                     <td><?= $jawaban['hasil_jawaban']?></td>
-                    <td><?= $jawaban['user_id']?></td>
+                    <td><?= $jawaban['nama_user']?></td>
                   </tr>
                   <?php
                    $no ++;
