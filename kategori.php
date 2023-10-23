@@ -34,7 +34,7 @@ $data_kategori = $model->dataKategori();
                     <th scope="col">No</th>
                     <th scope="col">Nama Kategori</th>
                     <th scope="col">Deskripsi</th>
-                    <th scope="col">User ID</th>
+                    <th scope="col">nama</th>
                   
                   </tr>
                 </thead>
@@ -47,7 +47,7 @@ $data_kategori = $model->dataKategori();
                     <th scope="row"><?= $no ?></th>
                     <td><?= $kategori['nama_kategori']?></td>
                     <td><?= $kategori['deskripsi']?></td>
-                    <td><?= $kategori['user_id']?></td>
+                    <td><?= $kategori['nama_user']?></td>
                   </tr>
                   <?php
                    $no ++;

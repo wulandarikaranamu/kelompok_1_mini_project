@@ -30,31 +30,29 @@ $data_jawaban = $model->dataJawaban();
               <!-- Table with stripped rows -->
               <table class="table datatable">
                 <thead>
-                  <tr>
-                    <th scope="col">No</th>
-                    <th scope="col">Pertanyaan ID</th>
-                    <th scope="col">Hasil Jawaban</th>
-                    <th scope="col">User ID</th>
-                  
-                  </tr>
-                </thead>
-                <tbody>
-                <?php
-                  $no =1;
-                   foreach ($data_jawaban as $jawaban){
-                    ?>
-                     <tr>
-                    <th scope="row"><?= $no ?></th>
-                    <td><?= $jawaban['pertanyaan_id']?></td>
-                    <td><?= $jawaban['hasil_jawaban']?></td>
-                    <td><?= $jawaban['user_id']?></td>
-                  </tr>
-                  <?php
-                   $no ++;
-                    }
-                   ?>
-                </tbody>
-              </table>
+            <tr>
+        <th scope="col">No</th>
+        <th scope="col">Hasil Jawaban</th>
+        <th scope="col">Hasil Pertanyaan</th>
+        <th scope="col">Nama User</th>
+    </tr>
+</thead>
+<tbody>
+    <?php
+    $no =1;
+    foreach ($data_jawaban as $jawaban){
+    ?>
+    <tr>
+        <th scope="row"><?= $no ?></th>
+        <td><?= $jawaban['hasil_jawaban']?></td>
+        <td><?= $jawaban['hasil_pertanyaan']?></td>
+        <td><?= $jawaban['nama']?></td>
+    </tr>
+    <?php
+    $no ++;
+    }
+    ?>
+</tbody>
               <!-- End Table with stripped rows -->
 
             </div>
