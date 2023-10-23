@@ -1,0 +1,1 @@
+1. menambahkan template ke github colab di branch main bye ketua
