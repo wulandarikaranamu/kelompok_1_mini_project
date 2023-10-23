@@ -47,7 +47,6 @@ $data_kategori = $model->dataKategori();
                     ?>
                      <tr>
                     <th scope="row"><?= $no ?></th>
-                    <td><?= $kategori['id']?></td>
                     <td><?= $kategori['nama_kategori']?></td>
                     <td><?= $kategori['deskripsi']?></td>
                     <td><?= $kategori['nama_user']?></td>
