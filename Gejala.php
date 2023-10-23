@@ -1,6 +1,6 @@
 <?php
-$model = new Pertanyaan();
-$data_pertanyaan = $model->dataPertanyaan();
+$model = new Gejala();
+$data_gejala = $model->dataGejala();
 
 
 ?>
@@ -8,12 +8,12 @@ $data_pertanyaan = $model->dataPertanyaan();
   <main id="main" class="main">
 
     <div class="pagetitle">
-      <h1>Pertanyaan</h1>
+      <h1>Gejala</h1>
       <nav>
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="index.html">Home</a></li>
           <li class="breadcrumb-item">Tables</li>
-          <li class="breadcrumb-item active">Pertanyaan</li>
+          <li class="breadcrumb-item active">Jawaban</li>
         </ol>
       </nav>
     </div><!-- End Page Title -->
@@ -32,22 +32,23 @@ $data_pertanyaan = $model->dataPertanyaan();
                 <thead>
                   <tr>
                     <th scope="col">No</th>
-                    <th scope="col">Hasil Pertanyaan</th>
-                    <th scope="col">Gejala ID</th>
-                    
+                    <th scope="col">Nama Gejala</th>
+                    <th scope="col">Deskripsi</th>
+                    <th scope="col">Kategori ID</th>
                   
                   </tr>
                 </thead>
                 <tbody>
                 <?php
                   $no =1;
-                   foreach ($data_pertanyaan as $pertanyaan){
+                   foreach ($data_gejala as $gejala){
                     ?>
                      <tr>
                     <th scope="row"><?= $no ?></th>
-                    <td><?= $pertanyaan['id']?></td>
-                    <td><?= $pertanyaan['hasil_pertanyaan']?></td>
-                    <td><?= $pertanyaan['gejala_id']?></td>
+                    <td><?= $gejala['id']?></td>
+                    <td><?= $gejala['nama_gejala']?></td>
+                    <td><?= $gejala['deskripsi']?></td>
+                    <td><?= $gejala['kategori_id']?></td>
                   </tr>
                   <?php
                    $no ++;

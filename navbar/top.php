@@ -95,7 +95,6 @@
             <li>
               <hr class="dropdown-divider">
             </li>
-
             <li class="notification-item">
               <i class="bi bi-x-circle text-danger"></i>
               <div>
@@ -215,7 +214,7 @@
             <span class="d-none d-md-block dropdown-toggle ps-2">K. Anderson</span>
           </a><!-- End Profile Iamge Icon -->
 
-          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+        <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
             <li class="dropdown-header">
               <h6>Kevin Anderson</h6>
               <span>Web Designer</span>
@@ -283,12 +282,19 @@
 
       <li class="nav-item">
         <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-menu-button-wide"></i><span>Kategori Gejala</span><i class="bi bi-chevron-down ms-auto"></i>
+          <i class="bi bi-menu-button-wide"></i><span>Indikasi</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
         <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
             <a href="index.php?url=kategori">
-              <i class="bi bi-circle"></i><span>Jenis Gejala</span>
+              <i class="bi bi-circle"></i><span>Kategori</span>
+            </a>
+          </li>
+        </ul>
+        <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="index.php?url=gejala">
+              <i class="bi bi-circle"></i><span> Gejala</span>
             </a>
           </li>
         </ul>
@@ -322,13 +328,13 @@
         </ul>
       </li><!-- End Forms Nav -->
 
-      <li class="nav-item">
+<li class="nav-item">
         <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
           <i class="bi bi-layout-text-window-reverse"></i><span>Jawaban</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
         <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="tables-general.html">
+            <a href="index.php?url=jawaban">
               <i class="bi bi-circle"></i><span>Jawaban</span>
             </a>
           </li>
@@ -340,8 +346,8 @@
         </ul>
       </li><!-- End Tables Nav -->
 
-      <!-- <li class="nav-item"> -->
-        <!-- <a class="nav-link collapsed" data-bs-target="#charts-nav" data-bs-toggle="collapse" href="#">
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#charts-nav" data-bs-toggle="collapse" href="#">
           <i class="bi bi-bar-chart"></i><span>Charts</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
         <ul id="charts-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
@@ -350,7 +356,7 @@
               <i class="bi bi-circle"></i><span>Chart.js</span>
             </a>
           </li>
-          <li>
+         <!--  <li>
             <a href="charts-apexcharts.html">
               <i class="bi bi-circle"></i><span>ApexCharts</span>
             </a>
@@ -359,9 +365,32 @@
             <a href="charts-echarts.html">
               <i class="bi bi-circle"></i><span>ECharts</span>
             </a>
+          </li> -->
+        </ul>
+      </li> <!-- End Charts Nav -->
+      
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#charts-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-person"></i><span>User</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="charts-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="index.php?url=user">
+              <i class="bi bi-circle"></i><span>User</span>
+            </a>
           </li>
-        </ul> -->
-      </li><!-- End Charts Nav -->
+         <!--  <li>
+            <a href="charts-apexcharts.html">
+              <i class="bi bi-circle"></i><span>ApexCharts</span>
+            </a>
+          </li>
+          <li>
+            <a href="charts-echarts.html">
+              <i class="bi bi-circle"></i><span>ECharts</span>
+            </a>
+          </li> -->
+        </ul>
+      </li> 
 
       <li class="nav-item">
         <!-- <a class="nav-link collapsed" data-bs-target="#icons-nav" data-bs-toggle="collapse" href="#">
@@ -439,4 +468,4 @@
 
     </ul>
 
-  </aside><!-- End Sidebar-->
+</aside><!-- End Sidebar-->

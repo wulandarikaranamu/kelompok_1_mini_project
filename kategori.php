@@ -14,6 +14,7 @@ $data_kategori = $model->dataKategori();
           <li class="breadcrumb-item"><a href="index.html">Home</a></li>
           <li class="breadcrumb-item">Tables</li>
           <li class="breadcrumb-item active">Kategori Gejla</li>
+          <li class="breadcrumb-item active">Kategori Gejala</li>
         </ol>
       </nav>
     </div><!-- End Page Title -->
@@ -24,6 +25,8 @@ $data_kategori = $model->dataKategori();
 
           <div class="card">
             <div class="card-body">
+              <h5 class="card-title"></h5>
+              <p></p>
 
               <!-- Table with stripped rows -->
               <table class="table datatable">
@@ -43,6 +46,7 @@ $data_kategori = $model->dataKategori();
                     ?>
                      <tr>
                     <th scope="row"><?= $no ?></th>
+                    <td><?= $kategori['id']?></td>
                     <td><?= $kategori['nama_kategori']?></td>
                     <td><?= $kategori['deskripsi']?></td>
                     <td><?= $kategori['user_id']?></td>

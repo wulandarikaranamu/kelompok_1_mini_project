@@ -1,6 +1,6 @@
 <?php 
 
-class Pertanyaan{
+class Jawaban{
     private $koneksi;
     public function __construct(){
         global $dbh;
@@ -8,9 +8,8 @@ class Pertanyaan{
     }
 
     //mengambil dan melihat tabel jenis_produk
-    public function dataPertanyaan(){
-    $sql = "SELECT * FROM kategori";
-    $sql = "SELECT * FROM pertanyaan";
+    public function dataJawaban(){
+    $sql = "SELECT * FROM jawaban";
     //menggunakan mekanisme prepare statement PDO
     $ps = $this->koneksi->prepare($sql);
     $ps->execute();
