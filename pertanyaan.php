@@ -1,4 +1,4 @@
-<?php
+<?php 
 $model = new Pertanyaan();
 $data_pertanyaan = $model->dataPertanyaan();
 
