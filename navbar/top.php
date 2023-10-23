@@ -300,11 +300,11 @@
         </a>
         <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="forms-elements.html">
-              <i class="bi bi-circle"></i><span>Form Elements</span>
+            <a href="index.php?url=pertanyaan">
+              <i class="bi bi-circle"></i><span>Pertanyaan</span>
             </a>
           </li>
-          <li>
+          <!-- <li>
             <a href="forms-layouts.html">
               <i class="bi bi-circle"></i><span>Form Layouts</span>
             </a>
@@ -318,7 +318,7 @@
             <a href="forms-validation.html">
               <i class="bi bi-circle"></i><span>Form Validation</span>
             </a>
-          </li>
+          </li> -->
         </ul>
       </li><!-- End Forms Nav -->
 
@@ -329,14 +329,14 @@
         <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
             <a href="tables-general.html">
-              <i class="bi bi-circle"></i><span>General Tables</span>
+              <i class="bi bi-circle"></i><span>Jawaban</span>
             </a>
           </li>
-          <li>
+          <!-- <li>
             <a href="tables-data.html">
               <i class="bi bi-circle"></i><span>Data Tables</span>
             </a>
-          </li>
+          </li> -->
         </ul>
       </li><!-- End Tables Nav -->
 

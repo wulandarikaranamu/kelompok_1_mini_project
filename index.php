@@ -1,9 +1,10 @@
 <?php 
+include_once 'models/Pertanyaan.php';
 include_once 'koneksi.php';
 include_once 'navbar/top.php';
 include_once 'index.php';
 include_once 'models/Kategori.php';
-include_once 'navbar/footer.php';
+
 ?>
 
 <div>
@@ -34,6 +35,6 @@ include_once 'navbar/footer.php';
 </div>
 
 <?php 
-    include_once 'bottom.php';
+    include_once 'navbar/footer.php';
 
 ?>
