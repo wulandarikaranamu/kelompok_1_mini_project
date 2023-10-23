@@ -1,6 +1,6 @@
 <?php
-$model = new Jawaban();
-$data_jawaban = $model->dataJawaban();
+$model = new User();
+$data_gejala = $model->dataUser();
 
 
 ?>
@@ -8,12 +8,12 @@ $data_jawaban = $model->dataJawaban();
   <main id="main" class="main">
 
     <div class="pagetitle">
-      <h1>Jawaban</h1>
+      <h1>User</h1>
       <nav>
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="index.html">Home</a></li>
           <li class="breadcrumb-item">Tables</li>
-          <li class="breadcrumb-item active">Jawaban</li>
+          <li class="breadcrumb-item active">User</li>
         </ol>
       </nav>
     </div><!-- End Page Title -->
@@ -32,22 +32,27 @@ $data_jawaban = $model->dataJawaban();
                 <thead>
                   <tr>
                     <th scope="col">No</th>
-                    <th scope="col">Pertanyaan ID</th>
-                    <th scope="col">Hasil Jawaban</th>
-                    <th scope="col">User ID</th>
+                    <th scope="col">Nama</th>
+                    <th scope="col">Jenis Kelamin</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Password</th>
+                    
                   
                   </tr>
                 </thead>
                 <tbody>
                 <?php
                   $no =1;
-                   foreach ($data_jawaban as $jawaban){
+                   foreach ($data_user as $user){
                     ?>
                      <tr>
                     <th scope="row"><?= $no ?></th>
-                    <td><?= $jawaban['pertanyaan_id']?></td>
-                    <td><?= $jawaban['hasil_jawaban']?></td>
-                    <td><?= $jawaban['user_id']?></td>
+                    <td><?= $user['id']?></td>
+                    <td><?= $user['nama']?></td>
+                    <td><?= $user['umur']?></td>
+                    <td><?= $user['jenis_kelamin']?></td>
+                    <td><?= $user['password']?></td>
+                    <td><?= $user['role']?></td>
                   </tr>
                   <?php
                    $no ++;

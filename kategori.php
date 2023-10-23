@@ -13,6 +13,7 @@ $data_kategori = $model->dataKategori();
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="index.html">Home</a></li>
           <li class="breadcrumb-item">Tables</li>
+          <li class="breadcrumb-item active">Kategori Gejla</li>
           <li class="breadcrumb-item active">Kategori Gejala</li>
         </ol>
       </nav>
@@ -40,11 +41,13 @@ $data_kategori = $model->dataKategori();
                 </thead>
                 <tbody>
                 <?php
+     
                   $no =1;
                    foreach ($data_kategori as $kategori){
                     ?>
                      <tr>
                     <th scope="row"><?= $no ?></th>
+                    <td><?= $kategori['id']?></td>
                     <td><?= $kategori['nama_kategori']?></td>
                     <td><?= $kategori['deskripsi']?></td>
                     <td><?= $kategori['nama_user']?></td>

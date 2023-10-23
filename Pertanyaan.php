@@ -31,9 +31,9 @@ $data_pertanyaan = $model->dataPertanyaan();
               <table class="table datatable">
                 <thead>
                   <tr>
-                  
+                    <th scope="col">No</th>
                     <th scope="col">Hasil Pertanyaan</th>
-                    <th scope="col">Nama Gejala</th>
+                    <th scope="col">Gejala ID</th>
                     
                   
                   </tr>
@@ -44,12 +44,13 @@ $data_pertanyaan = $model->dataPertanyaan();
                    foreach ($data_pertanyaan as $pertanyaan){
                     ?>
                      <tr>
-              
+                    <th scope="row"><?= $no ?></th>
+                    <td><?= $pertanyaan['id']?></td>
                     <td><?= $pertanyaan['hasil_pertanyaan']?></td>
-                    <td><?= $pertanyaan['nama_gejala']?></td>
+                    <td><?= $pertanyaan['gejala_id']?></td>
                   </tr>
                   <?php
-                  
+                   $no ++;
                     }
                    ?>
                 </tbody>
