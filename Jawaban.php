@@ -45,7 +45,6 @@ $data_jawaban = $model->dataJawaban();
                     ?>
                      <tr>
                     <th scope="row"><?= $no ?></th>
-                    <td><?= $jawaban['id']?></td>
                     <td><?= $jawaban['pertanyaan_id']?></td>
                     <td><?= $jawaban['hasil_jawaban']?></td>
                     <td><?= $jawaban['user_id']?></td>
