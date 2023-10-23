@@ -40,6 +40,7 @@ $data_kategori = $model->dataKategori();
                 </thead>
                 <tbody>
                 <?php
+     
                   $no =1;
                    foreach ($data_kategori as $kategori){
                     ?>
@@ -47,7 +48,7 @@ $data_kategori = $model->dataKategori();
                     <th scope="row"><?= $no ?></th>
                     <td><?= $kategori['nama_kategori']?></td>
                     <td><?= $kategori['deskripsi']?></td>
-                    <td><?= $kategori['user_id']?></td>
+                    <td><?= $kategori['nama_user']?></td>
                   </tr>
                   <?php
                    $no ++;

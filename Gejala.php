@@ -13,7 +13,7 @@ $data_gejala = $model->dataGejala();
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="index.html">Home</a></li>
           <li class="breadcrumb-item">Tables</li>
-          <li class="breadcrumb-item active">Jawaban</li>
+          <li class="breadcrumb-item active">Gejala</li>
         </ol>
       </nav>
     </div><!-- End Page Title -->
@@ -41,13 +41,15 @@ $data_gejala = $model->dataGejala();
                 <tbody>
                 <?php
                   $no =1;
-                   foreach ($data_jawaban as $jawaban){
+                   foreach ($data_gejala as $gejala){
                     ?>
                      <tr>
                     <th scope="row"><?= $no ?></th>
-                    <td><?= $jawaban['pertanyaan_id']?></td>
-                    <td><?= $jawaban['hasil_jawaban']?></td>
-                    <td><?= $jawaban['user_id']?></td>
+                    <td><?= $gejala['id']?></td>
+                    <td><?= $gejala['nama_gejala']?></td>
+                    <td><?= $gejala['pertanyaan_id']?></td>
+                    <td><?= $gejala['hasil_jawaban']?></td>
+                    <td><?= $gejala['user_id']?></td>
                   </tr>
                   <?php
                    $no ++;
