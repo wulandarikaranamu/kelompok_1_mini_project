@@ -1,1 +1,9 @@
+1. insert data ke database
+2. koneksi database
+3. tampilin data ke website 
+
+
+Merry Wulandari. S
 1. menambahkan template ke github colab di branch main bye ketua
+
+Yohan
