@@ -283,12 +283,19 @@
 
       <li class="nav-item">
         <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-menu-button-wide"></i><span>Kategori Gejala</span><i class="bi bi-chevron-down ms-auto"></i>
+          <i class="bi bi-menu-button-wide"></i><span>Indikasi</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
         <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
             <a href="index.php?url=kategori">
-              <i class="bi bi-circle"></i><span>Jenis Gejala</span>
+              <i class="bi bi-circle"></i><span>Kategori</span>
+            </a>
+          </li>
+        </ul>
+        <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="index.php?url=gejala">
+              <i class="bi bi-circle"></i><span> Gejala</span>
             </a>
           </li>
         </ul>
@@ -300,11 +307,11 @@
         </a>
         <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="forms-elements.html">
-              <i class="bi bi-circle"></i><span>Form Elements</span>
+            <a href="index.php?url=pertanyaan">
+              <i class="bi bi-circle"></i><span>Pertanyaan</span>
             </a>
           </li>
-          <li>
+          <!-- <li>
             <a href="forms-layouts.html">
               <i class="bi bi-circle"></i><span>Form Layouts</span>
             </a>
@@ -318,7 +325,7 @@
             <a href="forms-validation.html">
               <i class="bi bi-circle"></i><span>Form Validation</span>
             </a>
-          </li>
+          </li> -->
         </ul>
       </li><!-- End Forms Nav -->
 
@@ -328,15 +335,15 @@
         </a>
         <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="tables-general.html">
-              <i class="bi bi-circle"></i><span>General Tables</span>
+            <a href="index.php?url=jawaban">
+              <i class="bi bi-circle"></i><span>Jawaban</span>
             </a>
           </li>
-          <li>
+          <!-- <li>
             <a href="tables-data.html">
               <i class="bi bi-circle"></i><span>Data Tables</span>
             </a>
-          </li>
+          </li> -->
         </ul>
       </li><!-- End Tables Nav -->
 
