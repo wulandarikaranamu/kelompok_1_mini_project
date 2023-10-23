@@ -1,0 +1,22 @@
+[01.35, 23/10/2023] Merry Wulandari. S: kalau mau insert data di tabel kategori tabel user harus di isi terlebih dahulu karena ada relasi antara keduanya
+[01.36, 23/10/2023] Merry Wulandari. S: teruss jika insert data ke tabel kategori gagal maka deskripsi ubah ke (text)
+
+//Menambahkan data di tabel user
+INSERT INTO `user` (`id`, `nama`, `umur`, `jenis_kelamin`, `email`, `password`, `role`) VALUES
+('1', 'Merry', '20', 'P', 'wulan@gmail.com', '12345', NULL),
+('2', 'Yohan', '20', 'L', 'yohan@gmail.com', '23456', NULL),
+('3', 'try wahyudi', '20', 'L', 'try@gmail.com', '89012', NULL),
+('4', 'Agus', '20', 'L', 'agus@gmail.com', '14567', NULL),
+('5', 'Tiara', '20', 'P', 'tiara@gmail.com', '90762', NULL);
+
+//Menambahkan data di tabel kategori
+
+INSERT INTO `kategori` (`id`, `nama_kategori`, `deskripsi`, `user_id`) VALUES 
+('1', 'Demam', 'Kenaikan suhu tubuh yang biasanya disertai dengan menggigil, sakit kepala, dan kelemahan.', '1'),
+('2', 'Batuk Dan Pilek', ' Tanda umum infeksi saluran pernapasan atas, seperti pilek, batuk, bersin, dan tenggorokan sakit.', '2');
+('3', 'Nyeri Dada', 'Gejala umum penyakit jantung, termasuk angina atau serangan jantung.', '3'),
+('4', 'Mual dan Muntah', 'Gejala umum infeksi lambung atau keracunan makanan.', '4'),
+('5', 'Diare', 'Peningkatan buang air besar dengan tinja yang cair, yang bisa disebabkan oleh infeksi bakteri, virus, atau penyakit lainnya.', '5');
+
+
+
