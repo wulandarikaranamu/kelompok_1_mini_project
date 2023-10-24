@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Registration - NiceAdmin Bootstrap Template</title>
+  <title>Register Cek Kesehatan</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="admin/assets/img/favicon.png" rel="icon">
+  <link href="admin/assets/img/logoku.png" rel="icon">
   <link href="admin/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
@@ -37,8 +37,8 @@
             <div class="col-lg-4 col-md-6 d-flex flex-column align-items-center justify-content-center">
               <div class="d-flex justify-content-center py-4">
                 <a href="index.html" class="logo d-flex align-items-center w-auto">
-                  <img src="assets/img/logo.png" alt="">
-                  <span class="d-none d-lg-block">NiceAdmin</span>
+                  <img src="admin/assets/img/logoku.png" alt="">
+                  <span class="d-none d-lg-block">Registration</span>
                 </a>
               </div>
               <div class="card mb-3">
