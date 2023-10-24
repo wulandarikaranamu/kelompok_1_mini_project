@@ -2,7 +2,6 @@
 $model = new Jawaban();
 $data_jawaban = $model->dataJawaban();
 
-
 ?>
 
   <main id="main" class="main">
