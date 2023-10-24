@@ -66,5 +66,3 @@ $data_pertanyaan = $model->dataPertanyaan();
     </section>
 
   </main><!-- End #main -->
-
- 
