@@ -1,6 +1,6 @@
 <?php
-$model = new Jawaban();
-$data_jawaban = $model->dataJawaban();
+$model = new Pertanyaan();
+$data_pertanyaan = $model->dataPertanyaan();
 
 
 ?>
@@ -8,12 +8,12 @@ $data_jawaban = $model->dataJawaban();
   <main id="main" class="main">
 
     <div class="pagetitle">
-      <h1>Jawaban</h1>
+      <h1>Pertanyaan</h1>
       <nav>
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="index.html">Home</a></li>
           <li class="breadcrumb-item">Tables</li>
-          <li class="breadcrumb-item active">Jawaban</li>
+          <li class="breadcrumb-item active">Pertanyaan</li>
         </ol>
       </nav>
     </div><!-- End Page Title -->
@@ -32,22 +32,25 @@ $data_jawaban = $model->dataJawaban();
                 <thead>
                   <tr>
                     <th scope="col">No</th>
-                    <th scope="col">Pertanyaan ID</th>
-                    <th scope="col">Hasil Jawaban</th>
-                    <th scope="col">User ID</th>
-                  
+                    <th scope="col">Gejala</th>
+                    <th scope="col">Hasil Pertanyaan</th>
                   </tr>
                 </thead>
                 <tbody>
                 <?php
                   $no =1;
-                   foreach ($data_jawaban as $jawaban){
+                   foreach ($data_pertanyaan as $pertanyaan){
                     ?>
                      <tr>
                     <th scope="row"><?= $no ?></th>
-                    <td><?= $jawaban['pertanyaan']?></td>
-                    <td><?= $jawaban['hasil_jawaban']?></td>
-                    <td><?= $jawaban['nama_user']?></td>
+<<<<<<< HEAD:pertanyaan.php
+                    <td><?= $pertanyaan['id']?></td>
+                    <td><?= $pertanyaan['hasil_pertanyaan']?></td>
+                    <td><?= $pertanyaan['gejala_id']?></td>
+=======
+                    <td><?= $pertanyaan['nama_gejala']?></td>
+                    <td><?= $pertanyaan['hasil_pertanyaan']?></td>
+>>>>>>> b4b065512e05b61c27800a028d0dd0a9dfc6ab7c:admin/pertanyaan.php
                   </tr>
                   <?php
                    $no ++;
