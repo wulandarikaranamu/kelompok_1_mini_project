@@ -33,11 +33,9 @@ $data_user = $model->dataUser();
                   <tr>
                     <th scope="col">No</th>
                     <th scope="col">Nama</th>
+                    <th scope="col">Umur</th>
                     <th scope="col">Jenis Kelamin</th>
                     <th scope="col">Email</th>
-                    <th scope="col">Password</th>
-                    
-                  
                   </tr>
                 </thead>
                 <tbody>
@@ -51,8 +49,7 @@ $data_user = $model->dataUser();
                     <td><?= $user['nama']?></td>
                     <td><?= $user['umur']?></td>
                     <td><?= $user['jenis_kelamin']?></td>
-                    <td><?= $user['password']?></td>
-                   
+                    <td><?= $user['email']?></td>
                   </tr>
                   <?php
                    $no ++;

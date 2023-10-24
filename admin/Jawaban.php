@@ -32,9 +32,9 @@ $data_jawaban = $model->dataJawaban();
                 <thead>
                   <tr>
                     <th scope="col">No</th>
-                    <th scope="col">Pertanyaan ID</th>
+                    <th scope="col">Pertanyaan</th>
                     <th scope="col">Hasil Jawaban</th>
-                    <th scope="col">User ID</th>
+                    <th scope="col">User</th>
                   
                   </tr>
                 </thead>
