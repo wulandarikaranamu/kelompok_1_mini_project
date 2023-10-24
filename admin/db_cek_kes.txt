@@ -30,7 +30,7 @@ INSERT INTO `gejala` (`id`, `nama_gejala`, `deskripsi`, `kategori_id`) VALUES
 ('2', 'Batuk', 'infeksi saluran pernapasan', '2'),
 ('3', 'Sesak Nafas', 'Kesulitan bernapas', '3'),
 ('4', 'Nyeri Dada', ' ketidaknyamanan di dada', '4'),
-('5', 'Muan dan Muntah', '  Perasaan ingin muntah ', '5');
+('5', 'Mual dan Muntah', '  Perasaan ingin muntah ', '5');
 
 ---------------------------------------------------------------------------------------------------
 // Menambahkan data pada tabel pertanyaan 
