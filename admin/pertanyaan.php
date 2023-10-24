@@ -43,14 +43,11 @@ $data_pertanyaan = $model->dataPertanyaan();
                     ?>
                      <tr>
                     <th scope="row"><?= $no ?></th>
-<<<<<<< HEAD:pertanyaan.php
                     <td><?= $pertanyaan['id']?></td>
                     <td><?= $pertanyaan['hasil_pertanyaan']?></td>
                     <td><?= $pertanyaan['gejala_id']?></td>
-=======
                     <td><?= $pertanyaan['nama_gejala']?></td>
                     <td><?= $pertanyaan['hasil_pertanyaan']?></td>
->>>>>>> b4b065512e05b61c27800a028d0dd0a9dfc6ab7c:admin/pertanyaan.php
                   </tr>
                   <?php
                    $no ++;
