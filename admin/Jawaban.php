@@ -1,6 +1,8 @@
 <?php
 $model = new Jawaban();
 $data_jawaban = $model->dataJawaban();
+
+
 ?>
 
   <main id="main" class="main">
@@ -38,6 +40,7 @@ $data_jawaban = $model->dataJawaban();
                 </thead>
                 <tbody>
                 <?php
+               
                   $no =1;
                    foreach ($data_jawaban as $jawaban){
                     ?>
