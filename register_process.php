@@ -3,7 +3,7 @@
 $host = "localhost";
 $username = "root";
 $password = "";
-$database = "cek_kes";
+$database = "db_kes";
 
 $conn = new mysqli($host, $username, $password, $database);
 
