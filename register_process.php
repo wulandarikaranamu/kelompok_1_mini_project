@@ -17,7 +17,7 @@ $umur = $_POST['umur'];
 $jenis_kelamin = $_POST['jenis_kelamin'];
 $email = $_POST['email'];
 $password = $_POST['password'];
-$role = "admin"; // Anda bisa menambahkan logika peran (role) sesuai kebutuhan
+$role = "user"; // Anda bisa menambahkan logika peran (role) sesuai kebutuhan
 
 // Simpan data ke tabel User
 $query = "INSERT INTO User (nama, umur, jenis_kelamin, email, password, role) VALUES ('$nama', '$umur', '$jenis_kelamin', '$email', '$password', '$role')";
