@@ -1,8 +1,6 @@
 <?php
 $model = new Pertanyaan();
 $data_pertanyaan = $model->dataPertanyaan();
-
-
 ?>
 
   <main id="main" class="main">
@@ -42,8 +40,9 @@ $data_pertanyaan = $model->dataPertanyaan();
                   <tr>
                     <th scope="col">No</th>
                     <!-- <th scope="col">Gejala</th> -->
-                    <th scope="col">Hasil Pertanyaan</th>
                     <th scope="col">Gejala</th>
+                    <th scope="col">Keluhan</th>
+                    <th scope="col">Kategori</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -53,11 +52,10 @@ $data_pertanyaan = $model->dataPertanyaan();
                     ?>
                      <tr>
                     <th scope="row"><?= $no ?></th>
-                    <!-- <td><?= $pertanyaan['id']?></td> -->
-                    <td><?= $pertanyaan['hasil_pertanyaan']?></td>
-                    <!-- <td><?= $pertanyaan['gejala_id']?></td> -->
-                    <td><?= $pertanyaan['nama_gejala']?></td>
-                    <!-- <td><?= $pertanyaan['hasil_pertanyaan']?></td> -->
+                    <td><?= $pertanyaan['id']?></td>
+                    <td><?= $pertanyaan['gejala']?></td>
+                    <td><?= $pertanyaan['keluhan']?></td>
+                    <td><?= $pertanyaan['kategori']?></td>
                   </tr>
                   <?php
                    $no ++;

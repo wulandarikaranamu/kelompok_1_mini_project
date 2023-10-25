@@ -9,9 +9,6 @@ include_once 'models/Jawaban.php';
 include_once 'models/Gejala.php';
 include_once 'models/User.php';
 include_once 'models/Form_pertanyaan.php'
-
-
-
 ?>
 
 <div>
