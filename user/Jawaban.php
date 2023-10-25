@@ -32,9 +32,12 @@ $data_jawaban = $model->dataJawaban();
                 <thead>
                   <tr>
                     <th scope="col">No</th>
-                    <th scope="col">Pertanyaan</th>
-                    <th scope="col">Hasil Jawaban</th>
-                    <th scope="col">User</th>
+                    <th scope="col">Gejala</th>
+                    <th scope="col">Deskripsi</th>
+                    <th scope="col">Kategori</th>
+                    <th scope="col">Kategori</th>
+                    <th scope="col">Jawaban</th>
+                    <!-- <th scope="col">User</th> -->
                   
                   </tr>
                 </thead>
@@ -46,9 +49,10 @@ $data_jawaban = $model->dataJawaban();
                     ?>
                      <tr>
                     <th scope="row"><?= $no ?></th>
-                    <td><?= $jawaban['pertanyaan']?></td>
-                    <td><?= $jawaban['hasil_jawaban']?></td>
-                    <td><?= $jawaban['nama_user']?></td>
+                    <td><?= $jawaban['gejala']?></td>
+                    <td><?= $jawaban['deskripsi']?></td>
+                    <td><?= $jawaban['kategori_id']?></td> 
+                    <td><?= $jawaban['jawaban']?></td>
                   </tr>
                   <?php
                    $no ++;
