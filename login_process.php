@@ -4,7 +4,7 @@ session_start(); // Mulai sesi
 $host = "localhost";
 $username = "root";
 $password = "";
-$database = "cek_kes";
+$database = "db_kes";
 
 // Buat koneksi ke database
 $conn = new mysqli($host, $username, $password, $database);

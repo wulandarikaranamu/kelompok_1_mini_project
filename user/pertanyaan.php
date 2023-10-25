@@ -32,23 +32,27 @@ $data_pertanyaan = $model->dataPertanyaan();
                 <thead>
                   <tr>
                     <th scope="col">No</th>
-                    <!-- <th scope="col">Gejala</th> -->
-                    <th scope="col">Hasil Pertanyaan</th>
                     <th scope="col">Gejala</th>
+                    <th scope="col">Deskripsi</th>
+                    <th scope="col">Kategori</th>
+                    <th scope="col">Kategori</th>
+                    <th scope="col">Jawaban</th>
+                    <!-- <th scope="col">User</th> -->
+                  
                   </tr>
                 </thead>
                 <tbody>
                 <?php
+               
                   $no =1;
-                   foreach ($data_pertanyaan as $pertanyaan){
+                   foreach ($data_jawaban as $jawaban){
                     ?>
                      <tr>
                     <th scope="row"><?= $no ?></th>
-                    <!-- <td><?= $pertanyaan['id']?></td> -->
-                    <td><?= $pertanyaan['hasil_pertanyaan']?></td>
-                    <!-- <td><?= $pertanyaan['gejala_id']?></td> -->
-                    <td><?= $pertanyaan['nama_gejala']?></td>
-                    <!-- <td><?= $pertanyaan['hasil_pertanyaan']?></td> -->
+                    <td><?= $jawaban['gejala']?></td>
+                    <td><?= $jawaban['deskripsi']?></td>
+                    <td><?= $jawaban['kategori_id']?></td> 
+                    <td><?= $jawaban['jawaban']?></td>
                   </tr>
                   <?php
                    $no ++;

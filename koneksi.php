@@ -1,5 +1,5 @@
 <?php
-$dsn = 'mysql:dbname=cek_kes;host=localhost';
+$dsn = 'mysql:dbname=db_kes;host=localhost';
 $user = 'root';
 $password = '';
 

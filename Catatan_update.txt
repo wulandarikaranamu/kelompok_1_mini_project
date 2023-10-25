@@ -16,3 +16,6 @@ agus
    jika role ingin menjadi admin maka pada file "register_proses" pada line 20 di ganti menjadi  (  $role = "admin"; )
 
    jika role ingin menjadi user maka pada file "register_proses" pada line 20 di ganti menjadi  (  $role = "user"; )
+
+merry 
+   update database jadi tiga tabel 

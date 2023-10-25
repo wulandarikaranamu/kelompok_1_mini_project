@@ -9,9 +9,8 @@ class Gejala{
 
     //mengambil dan melihat tabel jenis_produk
     public function dataGejala(){
-    $sql = "SELECT g.id, g.nama_gejala, g.deskripsi, k.nama_kategori AS nama_kategori
-    FROM gejala g
-    INNER JOIN kategori k ON g.kategori_id = k.id;";
+    $sql = "SELECT p.id, p.gejala, p.deskripsi
+    FROM pertanyaan p;";
     $ps = $this->koneksi->prepare($sql);
     $ps->execute();
     $rs = $ps->fetchAll();
