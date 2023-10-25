@@ -32,9 +32,8 @@ $data_gejala = $model->dataGejala();
                 <thead>
                   <tr>
                     <th scope="col">No</th>
-                    <th scope="col">Nama Gejala</th>
-                    <th scope="col">Deskripsi</th>
                     <th scope="col">Gejala</th>
+                    <th scope="col">Deskripsi</th>
                     
                   </tr>
                 </thead>
@@ -45,9 +44,8 @@ $data_gejala = $model->dataGejala();
                     ?>
                      <tr>
                     <th scope="row"><?= $no ?></th>
-                    <td><?= $gejala['nama_gejala']?></td>
+                    <td><?= $gejala['gejala']?></td>
                     <td><?= $gejala['deskripsi']?></td>
-                    <td><?= $gejala['nama_kategori']?></td>
                     
                   </tr>
                   <?php
