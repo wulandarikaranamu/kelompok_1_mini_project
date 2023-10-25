@@ -34,7 +34,7 @@ $data_gejala = $model->dataGejala();
                     <th scope="col">No</th>
                     <th scope="col">Nama Gejala</th>
                     <th scope="col">Deskripsi</th>
-                    <th scope="col">Gejala</th>
+                    <th scope="col">Nama Kategori</th>
                     
                   </tr>
                 </thead>
