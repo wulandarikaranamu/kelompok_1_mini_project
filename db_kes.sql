@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.1
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 25, 2023 at 02:14 PM
--- Server version: 10.4.28-MariaDB
--- PHP Version: 8.2.4
+-- Generation Time: Oct 25, 2023 at 09:17 PM
+-- Server version: 10.4.27-MariaDB
+-- PHP Version: 8.2.0
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -32,6 +32,14 @@ CREATE TABLE `kategori` (
   `nama_kategori` varchar(45) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
+--
+-- Dumping data for table `kategori`
+--
+
+INSERT INTO `kategori` (`id`, `nama_kategori`) VALUES
+(0, 'batuk'),
+(1, 'batuk');
+
 -- --------------------------------------------------------
 
 --
@@ -44,8 +52,19 @@ CREATE TABLE `pertanyaan` (
   `keluhan` varchar(45) DEFAULT NULL,
   `deskripsi` varchar(255) DEFAULT NULL,
   `user_id` int(11) NOT NULL,
-  `kategori_id` int(11) NOT NULL
+  `kategori_id` int(11) NOT NULL,
+  `jawaban` varchar(225) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
+--
+-- Dumping data for table `pertanyaan`
+--
+
+INSERT INTO `pertanyaan` (`id`, `gejala`, `keluhan`, `deskripsi`, `user_id`, `kategori_id`, `jawaban`) VALUES
+(1, 'deman', 'ini keluhan', 'ini deskripsi', 1, 0, NULL),
+(2, 'demanm', 'ini keluhann', '', 2, 0, NULL),
+(4, 'ss', 'sssss', 'aaaa', 1, 0, NULL),
+(5, 'ss', 'sssss', 'aaaa', 1, 0, NULL);
 
 -- --------------------------------------------------------
 
@@ -62,6 +81,14 @@ CREATE TABLE `user` (
   `password` varchar(45) DEFAULT NULL,
   `role` varchar(45) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
+--
+-- Dumping data for table `user`
+--
+
+INSERT INTO `user` (`id`, `nama`, `umur`, `jenis_kelamin`, `email`, `password`, `role`) VALUES
+(1, 'u', 'u', 'laki-laki', 'u@gmail.com', '123', 'user'),
+(2, 'a', '17', 'laki-laki', 'a@gmail.com', '123', 'admin');
 
 --
 -- Indexes for dumped tables
@@ -92,10 +119,16 @@ ALTER TABLE `user`
 --
 
 --
+-- AUTO_INCREMENT for table `pertanyaan`
+--
+ALTER TABLE `pertanyaan`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- Constraints for dumped tables
