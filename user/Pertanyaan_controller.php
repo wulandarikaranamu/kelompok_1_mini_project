@@ -1,30 +1,29 @@
 <?php  
 
-include_once 'koneksi.php';
-include_once 'models/produk.php';
+include_once '../koneksi.php';
+include_once 'models/pertanyaan.php';
 
-$kode = $_POST['kode'];
-$nama = $_POST['nama'];
-$harga_beli = $_POST['harga_beli'];
-$harga_jual = $_POST['harga_jual'];
-$stok = $_POST['stok'];
-$min_stok = $_POST['min_stok'];
-$jenis_produk = $_POST['jenis_produk'];
+$gejala = $_POST['gejala'];
+$keluhan = $_POST['keluhan'];
+$deskripsi = $_POST['deskripsi'];
+$user_id = $_POST['user_id'];
+$kategori_id = $_POST['kategori_id'];
+
 
 $data = [
-    $kode, $nama, $harga_beli, $harga_jual, $stok, $min_stok, $jenis_produk
+    $gejala, $keluhan, $deskripsi, $user_id, $kategori_id
 ];
 
-$model = new produk();
+$model = new pertanyaan();
 $tombol = $_REQUEST['proses'];
 
 switch ($tombol) {
     case 'save': $model->save($data); break;
     default:
-    header('location:index.php?url=produk');
+    header('location:index.php?url=pertanyaan');
     break;
 }
 
-header('location:index.php?url=produk');
+header('location:index.php?url=pertanyaan');
 
 ?>

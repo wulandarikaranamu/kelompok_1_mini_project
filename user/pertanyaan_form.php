@@ -37,42 +37,51 @@ $data_form = $obj_Form->dataForm();
           <p></p>
 
 <h4 align="center">Form Pertanyaan</h4>
-<form action="Pertanyaan_conctroller.php" method="POST">
+<form action="Pertanyaan_controller.php" method="POST">
   <div class="form-group row">
-    <label for="text" class="col-4 col-form-label">Masukkan Pertanyaan</label> 
+    <label for="text" class="col-4 col-form-label">Masukkan Gejala</label> 
     <div class="col-8">
-      <input id="text1" name="hasil_pertanyaan" placeholder="Isi Pertanyaan" type="text" class="form-control">
+      <input id="text1" name="gejala" placeholder="Isi Gejala" type="text" class="form-control">
     </div>
   </div>
   <div class="form-group row">
-    <label for="text" class="col-4 col-form-label">Gejala</label> 
+    <label for="text" class="col-4 col-form-label">Masukkan Keluhan</label> 
     <div class="col-8">
-      <input id="text" name="gejala" placeholder="Isi gejala" type="text" class="form-control">
+      <input id="text2" name="keluhan" placeholder="Isi Keluhan" type="text" class="form-control">
     </div>
   </div>
   <div class="form-group row">
-    <label for="text2" class="col-4 col-form-label">Deskripsi Gejala</label> 
+    <label for="text2" class="col-4 col-form-label">Masukkan Deskripsi/Penjelasan</label> 
     <div class="col-8">
-      <input id="text2" name="deskripsi" placeholder="Isi harga beli Produk" type="text" class="form-control">
+      <input id="text3" name="deskripsi" placeholder="Isi Deskripsi/Penjelasan" type="text" class="form-control">
     </div>
   </div>
-  <div class="form-group row">
-    <label for="text3" class="col-4 col-form-label">Nama Kategori</label> 
-    <div class="col-8">
-      <input id="text3" name="harga_jual" placeholder="Isi harga jual Produk" type="text" class="form-control">
-    </div>
  
   <div class="form-group row">
-    <label for="select" class="col-4 col-form-label">Jenis Kategori</label> 
+    <label for="select" class="col-4 col-form-label">User</label> 
     <div class="col-8">
-      <select id="select" name="jenis_produk" class="custom-select">
-        <option value="rabbit">--- Pilih Jenis Produk ---</option>
-        <?php foreach( $data_jenis as $jenis ) : ?>
-        <option value="<?= $jenis['id'] ?>"><?= $jenis['nama'] ?></option>
+      <select id="select" name="user_id" class="custom-select">
+        <option value="rabbit">--- Pilih User ---</option>
+        <?php foreach( $data_pertanyaan as $pertanyaan ) : ?>
+        <option value="<?= $pertanyaan['id'] ?>"><?=$pertanyaan['nama_user'] ?></option>
         <?php endforeach; ?>
       </select>
     </div>
   </div> 
+
+  <div class="form-group row">
+    <label for="select" class="col-4 col-form-label">Jenis Kategori</label> 
+    <div class="col-8">
+      <select id="select" name="kategori_id" class="custom-select">
+        <option value="rabbit">--- Pilih Kategori ---</option>
+        <?php foreach( $data_form as $form ) : ?>
+        <option value="<?= $form['id'] ?>"><?=$form['nama_kategori'] ?></option>
+        <?php endforeach; ?>
+      </select>
+    </div>
+  </div> 
+
+  
   <div class="form-group row">
     <div class="offset-4 col-8">
     <button name="proses" value="save" type="submit" class="btn btn-primary">Submit</button>

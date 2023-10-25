@@ -22,6 +22,14 @@ $data_pertanyaan = $model->dataPertanyaan();
       <div class="row">
         <div class="col-lg-12">
 
+<!-- tombol -->
+<div class="card mb-4">
+ <div class="card-header">
+     <a href="index.php?url=pertanyaan_form">
+         <button class="btn btn-sm btn-primary">Tambah</button>
+       </a>
+    </div>
+
           <div class="card">
             <div class="card-body">
               <h5 class="card-title"></h5>
@@ -45,14 +53,14 @@ $data_pertanyaan = $model->dataPertanyaan();
                 <?php
                
                   $no =1;
-                   foreach ($data_jawaban as $jawaban){
+                   foreach ($data_pertanyaan as $pertanyaan){
                     ?>
                      <tr>
                     <th scope="row"><?= $no ?></th>
-                    <td><?= $jawaban['gejala']?></td>
-                    <td><?= $jawaban['deskripsi']?></td>
-                    <td><?= $jawaban['kategori_id']?></td> 
-                    <td><?= $jawaban['jawaban']?></td>
+                    <td><?= $pertanyaan['gejala']?></td>
+                    <td><?= $pertanyaan['deskripsi']?></td>
+                    <td><?= $pertanyaan['kategori_id']?></td> 
+                    <td><?= $pertanyaan['jawaban']?></td>
                   </tr>
                   <?php
                    $no ++;
