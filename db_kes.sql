@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 25, 2023 at 09:17 PM
--- Server version: 10.4.27-MariaDB
--- PHP Version: 8.2.0
+-- Generation Time: Oct 26, 2023 at 01:56 AM
+-- Server version: 10.4.28-MariaDB
+-- PHP Version: 8.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -37,8 +37,9 @@ CREATE TABLE `kategori` (
 --
 
 INSERT INTO `kategori` (`id`, `nama_kategori`) VALUES
-(0, 'batuk'),
-(1, 'batuk');
+(0, 'Demam'),
+(1, 'Diare'),
+(2, 'Batuk');
 
 -- --------------------------------------------------------
 
@@ -61,10 +62,8 @@ CREATE TABLE `pertanyaan` (
 --
 
 INSERT INTO `pertanyaan` (`id`, `gejala`, `keluhan`, `deskripsi`, `user_id`, `kategori_id`, `jawaban`) VALUES
-(1, 'deman', 'ini keluhan', 'ini deskripsi', 1, 0, NULL),
-(2, 'demanm', 'ini keluhann', '', 2, 0, NULL),
-(4, 'ss', 'sssss', 'aaaa', 1, 0, NULL),
-(5, 'ss', 'sssss', 'aaaa', 1, 0, NULL);
+(1, 'panas tinggi', 'panas yang tidak bisa turun', 'panas adalah lorem epsum', 5, 0, NULL),
+(2, 'Diare', 'sakit perut', 'Diare adalah Lorem Epsum', 4, 1, NULL);
 
 -- --------------------------------------------------------
 
@@ -87,8 +86,11 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `nama`, `umur`, `jenis_kelamin`, `email`, `password`, `role`) VALUES
-(1, 'u', 'u', 'laki-laki', 'u@gmail.com', '123', 'user'),
-(2, 'a', '17', 'laki-laki', 'a@gmail.com', '123', 'admin');
+(1, 'yohan', '20', 'laki-laki', 'y@gmail.com', '123', 'udmin'),
+(2, 'merry', '18', 'perempuan', 'w@gmail.com', '1234', 'admin'),
+(3, 'agus', '20', 'laki-laki', 'a@gmail.com', '12345', 'user'),
+(4, 'try', '20', 'laki-laki', 'r@gmail.com', '3456', 'user'),
+(5, 'tiara', '18', 'perempuan', 'i@gmail.com', '4567', 'user');
 
 --
 -- Indexes for dumped tables
@@ -128,7 +130,7 @@ ALTER TABLE `pertanyaan`
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- Constraints for dumped tables
