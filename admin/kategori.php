@@ -12,8 +12,7 @@ $data_kategori = $model->dataKategori();
     <nav>
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-        <li class="breadcrumb-item">Tables</li>
-        <li class="breadcrumb-item active">Kategori Gejla</li>
+        <li class="breadcrumb-item active">Kategori Gejala</li>
         <li class="breadcrumb-item active">Kategori</li>
       </ol>
     </nav>
@@ -30,33 +29,40 @@ $data_kategori = $model->dataKategori();
 
             <!-- Table with stripped rows -->
             <table class="table datatable">
-              <thead>
-                <tr>
-                  <th scope="col">No</th>
-                  <th scope="col">Kategori</th>
-                  <!-- <th scope="col">Deskripsi</th>
-                    <th scope="col">nama</th> -->
+             <thead>
+    <tr>
+      <th scope="col">No</th>
+      <th scope="col">Kategori</th>
+      <th scope="col">Actions</th> <!-- Add a new column for the button -->
+    </tr>
+  </thead>
+  <tbody>
+    <?php
+    $no = 1;
+    foreach ($data_kategori as $kategori) {
+    ?>
+      <tr>
+        <th scope="row"><?= $no ?></th>
+        <td><?= $kategori['nama_kategori'] ?></td>
+        <td>
+          <form>
+            <a href="index.php?url=kategori_detail&id=<?=$kategori['id']?>">
+              <button type="button" class="btn btn-outline-primary">Detail</button>
+            </a>
+            <a href="index.php?url=kategori_edit&id=<?=$kategori['id']?>">
+              <button type="button" class="btn btn-primary">Edit</button>
+            </a>
+          </form>
+        </td>
+      
+      </tr>
+    <?php
+      $no++;
+    }
+    ?>
+  </tbody>
+</table>
 
-                </tr>
-              </thead>
-              <tbody>
-                <?php
-
-                $no = 1;
-                foreach ($data_kategori as $kategori) {
-                ?>
-                  <tr>
-                    <th scope="row"><?= $no ?></th>
-                    <td><?= $kategori['nama_kategori'] ?></td>
-                    <!-- <td><?= $kategori['deskripsi'] ?></td>
-                    <td><?= $kategori['nama_user'] ?></td> -->
-                  </tr>
-                <?php
-                  $no++;
-                }
-                ?>
-              </tbody>
-            </table>
             <!-- End Table with stripped rows -->
 
           </div>
