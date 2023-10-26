@@ -34,6 +34,7 @@ $data_kategori = $model->dataKategori();
                   <tr>
                     <th scope="col">No</th>
                     <th scope="col">Kategori</th>
+                    <th scope="col">Aksi</th>
                     <!-- <th scope="col">Deskripsi</th>
                     <th scope="col">nama</th> -->
                   
@@ -45,11 +46,18 @@ $data_kategori = $model->dataKategori();
                   $no =1;
                    foreach ($data_kategori as $kategori){
                     ?>
-                     <tr>
+                    <tr>
                     <th scope="row"><?= $no ?></th>
                     <td><?= $kategori['nama_kategori']?></td>
                     <!-- <td><?= $kategori['deskripsi']?></td>
                     <td><?= $kategori['nama_user']?></td> -->
+                    <td>
+                        <form>
+                        <a href="index.php?url=kategori_detail&id=<?=$kategori['id'] ?>">
+                            <button type="button" class="btn btn-info btn-sm">Detail</button>
+                        </a>
+                        </form>
+                    </td>
                   </tr>
                   <?php
                    $no ++;
