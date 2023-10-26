@@ -50,4 +50,3 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
 
 $stmt->close();
 $conn->close();
-?>

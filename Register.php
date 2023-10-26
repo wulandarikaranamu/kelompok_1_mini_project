@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -28,6 +29,7 @@
   <link href="admin/assets/css/style.css" rel="stylesheet">
 
 </head>
+
 <body>
   <main>
     <div class="container">
@@ -91,9 +93,9 @@
       </section>
     </div>
   </main>
-   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-<!-- Vendor JS Files -->
+  <!-- Vendor JS Files -->
   <script src="admin/assets/vendor/apexcharts/apexcharts.min.js"></script>
   <script src="admin/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="admin/assets/vendor/chart.js/chart.umd.js"></script>
@@ -106,4 +108,5 @@
   <!-- Template Main JS File -->
   <script src="admin/assets/js/main.js"></script>
 </body>
+
 </html>
