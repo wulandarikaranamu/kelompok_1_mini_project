@@ -22,39 +22,11 @@ $data_pertanyaan = $model->dataPertanyaan();
     <div class="row">
       <div class="col-lg-12">
 
-<<<<<<< HEAD
         <div class="card">
           <div class="card-body">
             <h5 class="card-title"></h5>
             <p></p>
-
-            <!-- Table with stripped rows -->
-            <table class="table datatable">
-              <thead>
-                <tr>
-                  <th scope="col">No</th>
-                  <th scope="col">Gejala</th>
-                  <th scope="col">Deskripsi</th>
-                  <th scope="col">Kategori</th>
-                  <th scope="col">Kategori</th>
-                  <th scope="col">Jawaban</th>
-                  <!-- <th scope="col">User</th> -->
-
-                </tr>
-              </thead>
-              <tbody>
-                <?php
-
-                $no = 1;
-                foreach ($data_jawaban as $jawaban) {
-                ?>
-                  <tr>
-                    <th scope="row"><?= $no ?></th>
-                    <td><?= $jawaban['gejala'] ?></td>
-                    <td><?= $jawaban['deskripsi'] ?></td>
-                    <td><?= $jawaban['kategori_id'] ?></td>
-                    <td><?= $jawaban['jawaban'] ?></td>
-=======
+            
 <!-- tombol -->
 <div class="card mb-4">
  <div class="card-header">
@@ -96,7 +68,7 @@ $data_pertanyaan = $model->dataPertanyaan();
                     <td><?= $pertanyaan['deskripsi']?></td>
                     <td><?= $pertanyaan['nama_kategori']?></td> 
                     <td><?= $pertanyaan['jawaban']?></td>
->>>>>>> 34f1d11d82d71b09680bc4f409c352d7b4022f1d
+
                   </tr>
                 <?php
                   $no++;
