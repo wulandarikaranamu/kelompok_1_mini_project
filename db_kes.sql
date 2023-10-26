@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 26, 2023 at 01:56 AM
+-- Generation Time: Oct 26, 2023 at 11:21 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -37,8 +37,7 @@ CREATE TABLE `kategori` (
 --
 
 INSERT INTO `kategori` (`id`, `nama_kategori`) VALUES
-(0, 'Demam'),
-(1, 'Diare'),
+(1, 'Demam'),
 (2, 'Batuk');
 
 -- --------------------------------------------------------
@@ -62,8 +61,7 @@ CREATE TABLE `pertanyaan` (
 --
 
 INSERT INTO `pertanyaan` (`id`, `gejala`, `keluhan`, `deskripsi`, `user_id`, `kategori_id`, `jawaban`) VALUES
-(1, 'panas tinggi', 'panas yang tidak bisa turun', 'panas adalah lorem epsum', 5, 0, NULL),
-(2, 'Diare', 'sakit perut', 'Diare adalah Lorem Epsum', 4, 1, NULL);
+(1, 'panas tinggi', 'panas yang tidak bisa turun', 'demam lorem epsum', 1, 1, 'okeii');
 
 -- --------------------------------------------------------
 
@@ -86,11 +84,11 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `nama`, `umur`, `jenis_kelamin`, `email`, `password`, `role`) VALUES
-(1, 'yohan', '20', 'laki-laki', 'y@gmail.com', '123', 'udmin'),
-(2, 'merry', '18', 'perempuan', 'w@gmail.com', '1234', 'admin'),
-(3, 'agus', '20', 'laki-laki', 'a@gmail.com', '12345', 'user'),
-(4, 'try', '20', 'laki-laki', 'r@gmail.com', '3456', 'user'),
-(5, 'tiara', '18', 'perempuan', 'i@gmail.com', '4567', 'user');
+(1, 'merry', '20 tahun', 'perempuan', 'w@gmail.com', '123', 'admin'),
+(2, 'yohan', '20 tahun', 'laki-laki', 'y@gmail.com', '1234', 'admin'),
+(3, 'agus', '20 tahun', 'laki-laki', 'a@gmail.com', '12345', 'user'),
+(4, 'try wahyudi', '20 tahun', 'laki-laki', 'r@gmail.com', '34567', 'user'),
+(5, 'tiara', '20 tahun', 'perempuan', 'i@gmail.com', '23456', 'user');
 
 --
 -- Indexes for dumped tables
@@ -121,10 +119,16 @@ ALTER TABLE `user`
 --
 
 --
+-- AUTO_INCREMENT for table `kategori`
+--
+ALTER TABLE `kategori`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
 -- AUTO_INCREMENT for table `pertanyaan`
 --
 ALTER TABLE `pertanyaan`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `user`
@@ -140,7 +144,7 @@ ALTER TABLE `user`
 -- Constraints for table `pertanyaan`
 --
 ALTER TABLE `pertanyaan`
-  ADD CONSTRAINT `fk_pertanyaan_kategori1` FOREIGN KEY (`kategori_id`) REFERENCES `kategori` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  ADD CONSTRAINT `fk_pertanyaan_kategori1` FOREIGN KEY (`kategori_id`) REFERENCES `kategori` (`id`) ON DELETE CASCADE,
   ADD CONSTRAINT `fk_pertanyaan_user` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 COMMIT;
 
