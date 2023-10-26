@@ -29,3 +29,5 @@ pengguna dibagi atas 2 yaitu admin dan calon user
 3. delete data belum ada (delete)
 
 4. lihat data sudah ada di bagian user(detail)
+
+aksi update dan delete di bagian fitur pertanyaan (untuk admin)

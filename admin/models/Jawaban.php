@@ -10,7 +10,18 @@ class Jawaban{
 
     //mengambil dan melihat tabel jenis_produk
     public function dataJawaban(){
-    $sql = "SELECT * FROM pertanyaan;";
+    $sql = "SELECT
+    pertanyaan.id,
+    pertanyaan.gejala,
+    pertanyaan.keluhan,
+    pertanyaan.deskripsi,
+    pertanyaan.jawaban,
+    user.nama AS nama_user,
+    kategori.nama_kategori AS nama_kategori
+    FROM
+    pertanyaan
+    INNER JOIN user ON pertanyaan.user_id = user.id
+    INNER JOIN kategori ON pertanyaan.kategori_id = kategori.id";
     //menggunakan mekanisme prepare statement PDO
     $ps = $this->koneksi->prepare($sql);
     $ps->execute();
