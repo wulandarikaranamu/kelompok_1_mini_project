@@ -5,26 +5,19 @@ $produk = $model->dataKategori($id);
 
 ?>
 
-<section class="section">
-  <div class="row align-items-top">
-    <div class="col-lg-6">
-
-      <!-- Card with an image on left -->
-      <div class="card mb-4">
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img src="assets/img/card.jpg" class="img-fluid rounded-start" alt="...">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title"><?= $kategori['id'] ?></h5>
-              <p class="card-text"><?= $kategori['nama'] ?></p>
-            </div>
+<section class="py-5">
+  <div class="cotainer px-4 px-lg-5 my-5">
+    <div class="row gx-4 gx-lg-6 align-items-center">
+      <div class="col md-6">
+        <div class="card mb-3">
+          <!-- <img src="./assets/img/card.jpg" class="card-img-top" alt="..."> -->
+          <div class="card-body">
+            <h5 class="card-title"><?= $kategori['id'] ?>id</h5>
+            <p class="card-text"><?= $kategori['nama'] ?>Nama</p>
+            <button type="button" class="btn btn-sm btn-info"><a href="index.php?url=kategori">Kembali</a></button>
           </div>
         </div>
-      </div><!-- End Card with an image on left -->
-
+      </div>
     </div>
-
   </div>
 </section>

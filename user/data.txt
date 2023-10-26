@@ -1,0 +1,4 @@
+<img src="assets/img/card.jpg" class="img-fluid rounded-start" alt="...">
+</div>
+<h5 class="card-title"><?= $kategori['id'] ?></h5>
+<p class="card-text"><?= $kategori['nama'] ?></p>

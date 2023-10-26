@@ -27,6 +27,7 @@ $data_jawaban = $model->dataJawaban();
             <h5 class="card-title"></h5>
             <p></p>
 
+<<<<<<< HEAD
             <!-- Table with stripped rows -->
             <table class="table datatable">
               <thead>
@@ -42,6 +43,22 @@ $data_jawaban = $model->dataJawaban();
                 </tr>
               </thead>
               <tbody>
+=======
+              <!-- Table with stripped rows -->
+              <table class="table datatable">
+                <thead>
+                  <tr>
+                    <th scope="col">No</th>
+                    <th scope="col">Gejala</th>
+                    <th scope="col">Deskripsi</th>
+                    <th scope="col">Jawaban</th>
+                    <th scope="col">Aksi</th>
+                    <!-- <th scope="col">User</th> -->
+                  
+                  </tr>
+                </thead>
+                <tbody>
+>>>>>>> 34f1d11d82d71b09680bc4f409c352d7b4022f1d
                 <?php
 
                 $no = 1;
@@ -49,10 +66,17 @@ $data_jawaban = $model->dataJawaban();
                 ?>
                   <tr>
                     <th scope="row"><?= $no ?></th>
+<<<<<<< HEAD
                     <td><?= $jawaban['gejala'] ?></td>
                     <td><?= $jawaban['deskripsi'] ?></td>
                     <td><?= $jawaban['kategori_id'] ?></td>
                     <td><?= $jawaban['jawaban'] ?></td>
+=======
+                    <td><?= $jawaban['gejala']?></td>
+                    <td><?= $jawaban['deskripsi']?></td>
+                    <!-- <td><?= $jawaban['kategori_id']?></td>  -->
+                    <td><?= $jawaban['jawaban']?></td>
+>>>>>>> 34f1d11d82d71b09680bc4f409c352d7b4022f1d
                   </tr>
                 <?php
                   $no++;
