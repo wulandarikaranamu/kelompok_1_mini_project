@@ -21,11 +21,33 @@ class Jawaban{
     FROM
     pertanyaan
     INNER JOIN user ON pertanyaan.user_id = user.id
-    INNER JOIN kategori ON pertanyaan.kategori_id = kategori.id";
+    INNER JOIN kategori ON pertanyaan.kategori_id = kategori.id;";
     //menggunakan mekanisme prepare statement PDO
     $ps = $this->koneksi->prepare($sql);
     $ps->execute();
     $rs = $ps->fetchAll();
+    return $rs;
+}
+public function getJawaban($id) {
+    $sql = "SELECT
+    pertanyaan.id,
+    pertanyaan.gejala,
+    pertanyaan.keluhan,
+    pertanyaan.deskripsi,
+    pertanyaan.jawaban,
+    user.nama AS nama_user,
+    kategori.nama_kategori AS nama_kategori
+    FROM
+    pertanyaan
+    INNER JOIN user ON pertanyaan.user_id = user.id
+    INNER JOIN kategori ON pertanyaan.kategori_id = kategori.id
+            WHERE pertanyaan.id = ?;";
+
+    // menggunakan mekanisme prepere statement PDO
+    $ps = $this->koneksi->prepare($sql);
+    $ps->execute([$id]);
+    $rs = $ps->fetch();
+
     return $rs;
 }
 public function ubah($data){
@@ -34,7 +56,12 @@ public function ubah($data){
     $ps = $this->koneksi->prepare($sql);
     $ps->execute($data);
 }
-
+public function simpan($data){
+    $sql = "UPDATE pertanyaan SET id=?, gejala=?, keluhan=?, deskripsi=?, 
+    nama_user=?, kategori_idk=?, jawaban=? WHERE id=?";
+    $ps = $this->koneksi->prepare($sql);
+    $ps->execute($data);
+}
 }
 
 ?>

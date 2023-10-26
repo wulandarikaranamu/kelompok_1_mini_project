@@ -57,7 +57,7 @@ $data_jawaban = $model->dataJawaban();
                     <td><?= $jawaban['jawaban']?></td>
                     <td>
                       <form action="jawaban_controller.php" method="POST">
-                      <a href="index.php?url=jawaban_form&idedit=<?= $pertanyaan['id']?>">
+                      <a href="index.php?url=jawaban_ubah&idedit=<?= $jawaban['id']?>">
                         <button type="button" class="btn btn-warning btn-sm">ubah</button> 
                       </a>
                       </form>
