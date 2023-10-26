@@ -1,3 +1,9 @@
+<?php 
+$id = $_REQUEST['id'];
+$model = new Kategori();
+$produk = $model->dataKategori($id);
+
+?>
 
 <section class="section">
       <div class="row align-items-top">
@@ -11,8 +17,8 @@
               </div>
               <div class="col-md-8">
                 <div class="card-body">
-                  <h5 class="card-title">Card with an image on left</h5>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <h5 class="card-title"><?= $kategori['id']?></h5>
+                  <p class="card-text"><?= $kategori['nama']?></p>
                 </div>
               </div>
             </div>
