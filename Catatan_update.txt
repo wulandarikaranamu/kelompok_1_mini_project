@@ -19,3 +19,13 @@ agus
 
 merry 
    update database jadi tiga tabel 
+
+
+Merry :
+pengguna dibagi atas 2 yaitu admin dan calon user
+
+1. tambah data belum ada (create)
+2. update data belum ada (update)
+3. delete data belum ada (delete)
+
+4. lihat data sudah ada di bagian user(detail)
