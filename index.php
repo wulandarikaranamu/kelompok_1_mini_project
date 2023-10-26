@@ -35,7 +35,7 @@ $data_gejala = $model->dataGejala();
   <link href="admin/assets/vendor/simple-datatables/style.css" rel="stylesheet">
   <link href="admin/assets/css/style.css" rel="stylesheet">
 
- 
+
 </head>
 
 <body>
@@ -117,7 +117,7 @@ $data_gejala = $model->dataGejala();
         </a>
       </li><!-- End Login Page Nav -->
 
-    <!-- End Blank Page Nav -->
+      <!-- End Blank Page Nav -->
 
     </ul>
 
@@ -255,14 +255,14 @@ $data_gejala = $model->dataGejala();
                     <li><a class="dropdown-item" href="#">This Year</a></li>
                   </ul> -->
                 </div>
-                <div>    
+                <div>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
 
-      </div>
+          </div>
     </section>
-       <div class="pagetitle">
+    <div class="pagetitle">
       <h1>Gejala</h1>
       <nav>
         <ol class="breadcrumb">
@@ -290,25 +290,25 @@ $data_gejala = $model->dataGejala();
                     <th scope="col">Nama Gejala</th>
                     <th scope="col">Deskripsi</th>
                     <th scope="col">Gejala</th>
-                    
+
                   </tr>
                 </thead>
                 <tbody>
-                <?php
-                  $no =1;
-                   foreach ($data_gejala as $gejala){
-                    ?>
-                     <tr>
-                    <th scope="row"><?= $no ?></th>
-                    <td><?= $gejala['gejala']?></td>
-                    <td><?= $gejala['deskripsi']?></td>
-                    <td><?= $gejala['nama_kategori']?></td>
-                    
-                  </tr>
                   <?php
-                   $no ++;
-                    }
-                   ?>
+                  $no = 1;
+                  foreach ($data_gejala as $gejala) {
+                  ?>
+                    <tr>
+                      <th scope="row"><?= $no ?></th>
+                      <td><?= $gejala['gejala'] ?></td>
+                      <td><?= $gejala['deskripsi'] ?></td>
+                      <td><?= $gejala['nama_kategori'] ?></td>
+
+                    </tr>
+                  <?php
+                    $no++;
+                  }
+                  ?>
                 </tbody>
               </table>
               <!-- End Table with stripped rows -->

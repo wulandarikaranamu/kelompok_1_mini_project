@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 25, 2023 at 02:14 PM
+-- Generation Time: Oct 26, 2023 at 11:21 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -32,6 +32,14 @@ CREATE TABLE `kategori` (
   `nama_kategori` varchar(45) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
+--
+-- Dumping data for table `kategori`
+--
+
+INSERT INTO `kategori` (`id`, `nama_kategori`) VALUES
+(1, 'Demam'),
+(2, 'Batuk');
+
 -- --------------------------------------------------------
 
 --
@@ -44,8 +52,16 @@ CREATE TABLE `pertanyaan` (
   `keluhan` varchar(45) DEFAULT NULL,
   `deskripsi` varchar(255) DEFAULT NULL,
   `user_id` int(11) NOT NULL,
-  `kategori_id` int(11) NOT NULL
+  `kategori_id` int(11) NOT NULL,
+  `jawaban` varchar(225) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
+--
+-- Dumping data for table `pertanyaan`
+--
+
+INSERT INTO `pertanyaan` (`id`, `gejala`, `keluhan`, `deskripsi`, `user_id`, `kategori_id`, `jawaban`) VALUES
+(1, 'panas tinggi', 'panas yang tidak bisa turun', 'demam lorem epsum', 1, 1, 'okeii');
 
 -- --------------------------------------------------------
 
@@ -62,6 +78,17 @@ CREATE TABLE `user` (
   `password` varchar(45) DEFAULT NULL,
   `role` varchar(45) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
+--
+-- Dumping data for table `user`
+--
+
+INSERT INTO `user` (`id`, `nama`, `umur`, `jenis_kelamin`, `email`, `password`, `role`) VALUES
+(1, 'merry', '20 tahun', 'perempuan', 'w@gmail.com', '123', 'admin'),
+(2, 'yohan', '20 tahun', 'laki-laki', 'y@gmail.com', '1234', 'admin'),
+(3, 'agus', '20 tahun', 'laki-laki', 'a@gmail.com', '12345', 'user'),
+(4, 'try wahyudi', '20 tahun', 'laki-laki', 'r@gmail.com', '34567', 'user'),
+(5, 'tiara', '20 tahun', 'perempuan', 'i@gmail.com', '23456', 'user');
 
 --
 -- Indexes for dumped tables
@@ -92,10 +119,22 @@ ALTER TABLE `user`
 --
 
 --
+-- AUTO_INCREMENT for table `kategori`
+--
+ALTER TABLE `kategori`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `pertanyaan`
+--
+ALTER TABLE `pertanyaan`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
+--
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- Constraints for dumped tables
@@ -105,7 +144,7 @@ ALTER TABLE `user`
 -- Constraints for table `pertanyaan`
 --
 ALTER TABLE `pertanyaan`
-  ADD CONSTRAINT `fk_pertanyaan_kategori1` FOREIGN KEY (`kategori_id`) REFERENCES `kategori` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  ADD CONSTRAINT `fk_pertanyaan_kategori1` FOREIGN KEY (`kategori_id`) REFERENCES `kategori` (`id`) ON DELETE CASCADE,
   ADD CONSTRAINT `fk_pertanyaan_user` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 COMMIT;
 

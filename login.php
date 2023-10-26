@@ -10,7 +10,7 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="admin/assets/img/favicon.png" rel="icon">
+  <link href="admin/assets/img/logoku.png" rel="icon">
   <link href="admin/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
@@ -86,7 +86,7 @@
                       <p class="small mb-0">Already have an account? <a href="Register.php">Create Account</a></p>
                     </div>
                   </form>
-                  
+
 
                 </div>
               </div>
