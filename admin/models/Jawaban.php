@@ -50,18 +50,18 @@ public function getJawaban($id) {
 
     return $rs;
 }
-public function ubah($data){
-    $sql = "UPDATE pertanyaan SET id=?, gejala=?, keluhan=?, deskripsi=?, 
-    nama_user=?, kategori_idk=?, jawaban=? WHERE id=?";
-    $ps = $this->koneksi->prepare($sql);
-    $ps->execute($data);
-}
 public function simpan($data){
-    $sql = "UPDATE pertanyaan SET id=?, gejala=?, keluhan=?, deskripsi=?, 
-    nama_user=?, kategori_idk=?, jawaban=? WHERE id=?";
+    $sql = "INSERT INTO pertanyaan (gejala, keluhan, deskripsi, user_id, kategori_id, jawaban) VALUES (?,?,?,?,?,?)";
     $ps = $this->koneksi->prepare($sql);
     $ps->execute($data);
 }
+public function ubah($data){
+    $sql = "UPDATE pertanyaan SET gejala=?, keluhan=?, deskripsi= ?, user_id=?, kategori_id=?, jawaban=? WHERE id=?";
+     $ps = $this->koneksi->prepare($sql);
+     $ps->execute($data);
+
+}
+
 }
 
 ?>

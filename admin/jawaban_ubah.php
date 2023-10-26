@@ -6,16 +6,15 @@ $rs = $objKategori->dataKategori();
 $objUser = new User();
 $rs = $objUser->dataUser();
 
-//--------awal edit data-------------------
-//tangkap request idedit di url
+
 $idedit = $_REQUEST['idedit'];
-$objJawaban = new Jawaban(); // Perbaikan pada nama objek
-if (!empty($idedit)) { //modus ubah / hapus data lama
+$objJawaban = new Jawaban(); 
+if (!empty($idedit)) { 
     $row = $objJawaban->getJawaban($idedit);
-} else { //modus entry data baru
+} else { 
     $row = array();
 }
-//--------akhir edit data--------------------
+
 ?>
 
 
@@ -48,7 +47,7 @@ if (!empty($idedit)) { //modus ubah / hapus data lama
           <h5 class="card-title"></h5>
           <p></p>
 
-<h4 align="center">Update Jawaban</h4>
+<h4 align="center">Update</h4>
 <form action="jawaban_controller.php" method="POST">
   
   <div class="form-group row">
@@ -71,9 +70,18 @@ if (!empty($idedit)) { //modus ubah / hapus data lama
   </div>
  
   <div class="form-group row">
-    <label for="text3" class="col-4 col-form-label">Nama</label> 
+    <label for="select" class="col-4 col-form-label">Nama</label> 
     <div class="col-8">
-      <input id="text4" name="user_id" placeholder="Isi Deskripsi/Penjelasan" type="text" class="form-control" value="<?= $row['nama_user']; ?>" />
+      <select id="select" name="nama_user" class="custom-select">
+        <option value="rabbit">---Pilih Jenis Produk---</option>
+        <?php
+        foreach ($data_jawaban as $jawaban){
+          $sel = ($jawaban['id'] == $jawaban['nama_user']) ? 'selected' : '';
+            ?>
+            <option value="<?= $jenis['id']; ?>"<?= $sel; ?>><?= $jenis ['nama']?></option>
+        <?php } ?>
+
+      </select>
     </div>
   </div>
 
@@ -93,7 +101,7 @@ if (!empty($idedit)) { //modus ubah / hapus data lama
 
   <div class="form-group row">
     <div class="offset-4 col-8">
-    <button name="proses" value="save" type="submit" class="btn btn-primary">Submit</button>
+    <button name="proses" value="ubah" type="submit" class="btn btn-primary">Submit</button>
     </div>
   </div>
 </form>
