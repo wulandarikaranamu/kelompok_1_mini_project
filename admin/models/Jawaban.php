@@ -28,6 +28,13 @@ class Jawaban{
     $rs = $ps->fetchAll();
     return $rs;
 }
+public function ubah($data){
+    $sql = "UPDATE pertanyaan SET id=?, gejala=?, keluhan=?, deskripsi=?, 
+    nama_user=?, kategori_idk=?, jawaban=? WHERE id=?";
+    $ps = $this->koneksi->prepare($sql);
+    $ps->execute($data);
+}
+
 }
 
 ?>

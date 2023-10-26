@@ -32,11 +32,10 @@ $data_jawaban = $model->dataJawaban();
                 <thead>
                   <tr>
                     <th scope="col">No</th>
-                    <th scope="col">Jawaban</th>
-                    <th scope="col">Gejala</th>
                     <th scope="col">Nama</th>
+                    <th scope="col">Gejala</th>
                     <th scope="col">Deskripsi</th>
-                   
+                    <th scope="col">Jawaban</th>                               
                     <th scope="col">Aksi</th>
                     <!-- <th scope="col">User</th> -->
                   
@@ -56,6 +55,13 @@ $data_jawaban = $model->dataJawaban();
                     <td><?= $jawaban['deskripsi']?></td>
                     <!-- <td><?= $jawaban['kategori_id']?></td>  -->
                     <td><?= $jawaban['jawaban']?></td>
+                    <td>
+                      <form action="jawaban_controller.php" method="POST">
+                      <a href="index.php?url=jawaban_form&idedit=<?= $pertanyaan['id']?>">
+                        <button type="button" class="btn btn-warning btn-sm">ubah</button> 
+                      </a>
+                      </form>
+                    </td>
 
                   </tr>
                 <?php
