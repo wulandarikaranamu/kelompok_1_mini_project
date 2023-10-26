@@ -1,8 +1,6 @@
 <?php
 $model = new Pertanyaan();
 $data_pertanyaan = $model->dataPertanyaan();
-
-
 ?>
 
 <main id="main" class="main">
@@ -26,7 +24,6 @@ $data_pertanyaan = $model->dataPertanyaan();
           <div class="card-body">
             <h5 class="card-title"></h5>
             <p></p>
-
           <div class="card">
             <div class="card-body">
               <h5 class="card-title"></h5>
