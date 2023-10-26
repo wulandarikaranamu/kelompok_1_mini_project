@@ -32,9 +32,11 @@ $data_jawaban = $model->dataJawaban();
                 <thead>
                   <tr>
                     <th scope="col">No</th>
-                    <th scope="col">Gejala</th>
-                    <th scope="col">Deskripsi</th>
                     <th scope="col">Jawaban</th>
+                    <th scope="col">Gejala</th>
+                    <th scope="col">Nama</th>
+                    <th scope="col">Deskripsi</th>
+                   
                     <th scope="col">Aksi</th>
                     <!-- <th scope="col">User</th> -->
                   
@@ -49,6 +51,7 @@ $data_jawaban = $model->dataJawaban();
                 ?>
                   <tr>
                     <th scope="row"><?= $no ?></th>
+                    <td><?= $jawaban['nama_user']?></td>
                     <td><?= $jawaban['gejala']?></td>
                     <td><?= $jawaban['deskripsi']?></td>
                     <!-- <td><?= $jawaban['kategori_id']?></td>  -->

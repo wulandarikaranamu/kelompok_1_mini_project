@@ -26,14 +26,6 @@ $data_pertanyaan = $model->dataPertanyaan();
           <div class="card-body">
             <h5 class="card-title"></h5>
             <p></p>
-            
-<!-- tombol -->
-<div class="card mb-4">
- <div class="card-header">
-     <a href="index.php?url=pertanyaan_form">
-         <button class="btn btn-sm btn-primary">Tambah</button>
-       </a>
-    </div>
 
           <div class="card">
             <div class="card-body">
@@ -45,12 +37,11 @@ $data_pertanyaan = $model->dataPertanyaan();
                 <thead>
                   <tr>
                     <th scope="col">No</th>
+                    <th scope="col">Nama</th>
                     <th scope="col">Gejala</th>
                     <th scope="col">Keluhan</th>
                     <th scope="col">Deskripsi</th>
                     <th scope="col">Kategori</th>
-                    <th scope="col">Jawaban</th>
-                    <th scope="col">Aksi</th>
                     <!-- <th scope="col">User</th> -->
                   
                   </tr>
@@ -63,12 +54,11 @@ $data_pertanyaan = $model->dataPertanyaan();
                     ?>
                      <tr>
                     <th scope="row"><?= $no ?></th>
+                    <td><?= $pertanyaan['nama_user']?></td>
                     <td><?= $pertanyaan['gejala']?></td>
                     <td><?= $pertanyaan['keluhan']?></td>
                     <td><?= $pertanyaan['deskripsi']?></td>
                     <td><?= $pertanyaan['nama_kategori']?></td> 
-                    <td><?= $pertanyaan['jawaban']?></td>
-
                   </tr>
                 <?php
                   $no++;
