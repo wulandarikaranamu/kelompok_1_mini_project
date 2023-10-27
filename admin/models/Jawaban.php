@@ -41,7 +41,7 @@ public function getJawaban($id) {
     pertanyaan
     INNER JOIN user ON pertanyaan.user_id = user.id
     INNER JOIN kategori ON pertanyaan.kategori_id = kategori.id
-            WHERE pertanyaan.id = ?;";
+    WHERE pertanyaan.id = ?;";
 
     // menggunakan mekanisme prepere statement PDO
     $ps = $this->koneksi->prepare($sql);

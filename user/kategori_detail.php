@@ -1,7 +1,7 @@
 <?php
 $id = $_REQUEST['id'];
 $model = new Kategori();
-$kategori = $model->dataKategori($id);
+$kategori = $model->getKategori($id);
 
 ?>
 
