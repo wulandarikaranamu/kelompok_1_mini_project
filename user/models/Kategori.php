@@ -9,9 +9,7 @@ class Kategori{
 
     //mengambil dan melihat tabel jenis_produk
     public function dataKategori(){
-    $sql = "SELECT k.id, k.nama_kategori
-    FROM kategori k
-    JOIN user u ON k.user_id = u.id;";
+    $sql = "SELECT * FROM kategori";
     //menggunakan mekanisme prepare statement PDO
     $ps = $this->koneksi->prepare($sql);
     $ps->execute();

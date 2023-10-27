@@ -1,7 +1,7 @@
 <?php
 $id = $_REQUEST['id'];
 $model = new Kategori();
-$produk = $model->dataKategori($id);
+$kategori = $model->dataKategori($id);
 
 ?>
 
@@ -15,7 +15,7 @@ $produk = $model->dataKategori($id);
         <div class="card">
           <div class="card-body">
             <h5 class="card-title"><?= $kategori['id'] ?></h5>
-            <p class="card-text"><?= $kategori['nama'] ?></p>
+            <p class="card-text"><?= $kategori['nama_kategori'] ?></p>
             <form>
               <a href="index.php?url=kategori">
                 <button type="button" class="btn btn-info btn-sm">Kembali</button>

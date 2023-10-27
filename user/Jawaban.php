@@ -33,8 +33,8 @@ $data_jawaban = $model->dataJawaban();
                 <tr>
                   <th scope="col">No</th>
                   <th scope="col">Gejala</th>
+                  <th scope="col">Keluhan</th>
                   <th scope="col">Deskripsi</th>
-                  <th scope="col">Kategori</th>
                   <th scope="col">Kategori</th>
                   <th scope="col">Jawaban</th>
                   <!-- <th scope="col">User</th> -->
@@ -50,8 +50,9 @@ $data_jawaban = $model->dataJawaban();
                   <tr>
                     <th scope="row"><?= $no ?></th>
                     <td><?= $jawaban['gejala'] ?></td>
+                    <td><?= $jawaban['keluhan'] ?></td>
                     <td><?= $jawaban['deskripsi'] ?></td>
-                    <td><?= $jawaban['kategori_id'] ?></td>
+                    <td><?= $jawaban['nama_kategori'] ?></td>
                     <td><?= $jawaban['jawaban'] ?></td>
                   </tr>
                 <?php
