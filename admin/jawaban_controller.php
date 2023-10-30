@@ -23,6 +23,9 @@ switch ($tombol) {
         $data[] = $_POST['id'];
         $model->ubah($data);
         break;
+    case 'hapus': unset($data);
+        $data[] = $_POST['id'];
+        $model->hapus($data);break;
     default:
         header('location:index.php?url=jawaban');
         break;

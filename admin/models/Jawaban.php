@@ -61,6 +61,11 @@ public function ubah($data){
      $ps->execute($data);
 
 }
+public function hapus($data){
+    $sql = "DELETE FROM pertanyaan WHERE id=?";
+    $ps = $this->koneksi->prepare($sql);
+    $ps->execute($data);
+ }
 
 }
 

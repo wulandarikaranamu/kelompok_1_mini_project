@@ -60,6 +60,9 @@ $data_jawaban = $model->dataJawaban();
                       <a href="index.php?url=jawaban_ubah&idedit=<?= $jawaban['id']?>">
                         <button type="button" class="btn btn-warning btn-sm">ubah</button> 
                       </a>
+                      <button type="submit" class="btn btn-danger btn-sm" name="proses" value="hapus" 
+                          onclick="return confirm('anda Yakin akan menghapus ?')" >Hapus</button>
+                      <input type="hidden" name="id" value="<?= $jawaban ['id']?> ">
                       </form>
                     </td>
 
