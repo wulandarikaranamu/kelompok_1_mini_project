@@ -16,15 +16,12 @@ class Kategori{
     $rs = $ps->fetchAll();
     return $rs;
 }
-public function getKategori($id){
-    $sql = "SELECT * FROM kategori
-    WHERE id = ?;
-
-    ";
-    //menggunakan mekanisme prepare statement PDO
+ //menampilkan detail nama_kategori
+ public function detailKategori($id){
+    $sql = "SELECT * FROM kategori WHERE id = :id";
     $ps = $this->koneksi->prepare($sql);
-    $ps->execute([$id]);
-    $rs = $ps->fetchAll();
+    $ps->execute(['id' => $id]);
+    $rs = $ps->fetch();
     return $rs;
 }
 }
