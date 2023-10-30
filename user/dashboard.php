@@ -35,11 +35,11 @@
         </div>
 
         <div class="card-body">
-          <h5 class="card-title">Sales <span>| Today</span></h5>
+          <h5 class="card-title">Visitors <span>| Today</span></h5>
 
           <div class="d-flex align-items-center">
             <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
-              <i class="bi bi-cart"></i>
+              <i class="ri-account-box-fill"></i>
             </div>
             <div class="ps-3">
               <h6>145</h6>
