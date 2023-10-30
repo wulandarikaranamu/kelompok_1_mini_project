@@ -5,6 +5,9 @@ include_once 'models/Gejala.php';
 
 $model = new Gejala();
 $data_gejala = $model->dataGejala();
+
+global $member;
+global $role;
 ?>
 <!DOCTYPE html>
 <html lang="en">

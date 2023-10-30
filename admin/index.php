@@ -10,15 +10,17 @@ include_once 'models/Gejala.php';
 include_once 'models/User.php';
 
 
-
+// $sesi = $_SESSION['admin'];
+// if (isset($sesi)) {
 ?>
+
 
 <div>
     <div class="continer-fluid px-4">
         <!-- <h1>Selamat Datang di Halaman Admin</h1> -->
 
         <?php
-        // error_reporting(0); //ini digunakan untuk menyembunyikan error
+        error_reporting(0); //ini digunakan untuk menyembunyikan error
         //membuat logik sederhana untuk mengarahkan url ke file yang
         //mempunyai extension.php
         //routing => file yang mengarahkan url
@@ -43,4 +45,7 @@ include_once 'models/User.php';
 <?php
 include_once 'navbar/footer.php';
 
+// } else {
+//     echo '<script>alert("anda tidak boleh masuk");history.back();</script>';
+// }
 ?>
