@@ -1,4 +1,9 @@
 <?php  
+$obj_user = new User();
+$data_user = $obj_user->dataUser();
+
+$obj_kategori = new Kategori();
+$data_kategori = $obj_kategori->dataKategori();
 
 $obj_pertanyaan = new pertanyaan();
 $obj_Form = new form_pertanyaan();
@@ -62,8 +67,8 @@ $data_form = $obj_Form->dataForm();
     <div class="col-8">
       <select id="select" name="user_id" class="custom-select">
         <option value="rabbit">--- Pilih User ---</option>
-        <?php foreach( $data_pertanyaan as $pertanyaan ) : ?>
-        <option value="<?= $pertanyaan['id'] ?>"><?=$pertanyaan['nama_user'] ?></option>
+        <?php foreach( $data_user as $user ) : ?>
+        <option value="<?= $user['id'] ?>"><?= $user['nama'] ?></option>
         <?php endforeach; ?>
       </select>
     </div>
@@ -74,8 +79,8 @@ $data_form = $obj_Form->dataForm();
     <div class="col-8">
       <select id="select" name="kategori_id" class="custom-select">
         <option value="rabbit">--- Pilih Kategori ---</option>
-        <?php foreach( $data_form as $form ) : ?>
-        <option value="<?= $form['id'] ?>"><?=$form['nama_kategori'] ?></option>
+        <?php foreach( $data_kategori as $kategori ) : ?>
+        <option value="<?= $kategori['id'] ?>"><?=$kategori['nama_kategori'] ?></option>
         <?php endforeach; ?>
       </select>
     </div>

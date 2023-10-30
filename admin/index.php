@@ -18,7 +18,7 @@ include_once 'models/User.php';
         <!-- <h1>Selamat Datang di Halaman Admin</h1> -->
 
         <?php
-        error_reporting(0); //ini digunakan untuk menyembunyikan error
+        // error_reporting(0); //ini digunakan untuk menyembunyikan error
         //membuat logik sederhana untuk mengarahkan url ke file yang
         //mempunyai extension.php
         //routing => file yang mengarahkan url

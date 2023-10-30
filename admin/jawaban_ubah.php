@@ -1,7 +1,9 @@
 <?php
+$obj_kategori = new Kategori();
+$data_kategori = $obj_kategori->dataKategori();
 
-$objKategori = new Kategori();
-$rs = $objKategori->dataKategori();
+// $objKategori = new Kategori();
+// $rs = $objKategori->dataKategori();
 
 $objUser = new User();
 $rs = $objUser->dataUser();
@@ -49,6 +51,11 @@ if (!empty($idedit)) {
 
 <h4 align="center">Update</h4>
 <form action="jawaban_controller.php" method="POST">
+
+    <label for="text4" class="col-4 col-form-label"></label> 
+      <input id="text5" name="id" placeholder="Isi Deskripsi/Penjelasan" type="hidden" class="form-control" value="<?= $row['id']; ?>" />
+
+
   
   <div class="form-group row">
     <label for="text1" class="col-4 col-form-label">Masukkan Gejala</label> 
@@ -69,7 +76,7 @@ if (!empty($idedit)) {
     </div>
   </div>
  
-  <div class="form-group row">
+  <!-- <div class="form-group row">
     <label for="select" class="col-4 col-form-label">Nama</label> 
     <div class="col-8">
       <select id="select" name="nama_user" class="custom-select">
@@ -83,19 +90,37 @@ if (!empty($idedit)) {
 
       </select>
     </div>
-  </div>
+  </div> -->
 
-  <div class="form-group row">
+  <!-- <div class="form-group row">
+    <label for="select" class="col-4 col-form-label">Kategori</label> 
+    <div class="col-8">
+      <select id="select" name="nama_user" class="custom-select">
+        <option value="rabbit">-----</option>
+        <?php
+        foreach ($data_kategori as $kategori){
+          $sel = ($kategori['id'] == $kategori['nama_kategori']) ? 'selected' : '';
+            ?>
+            <option value="<?= $kategori['id']; ?>"<?= $sel; ?>><?= $kategori ['nama_kategori']?></option>
+        <?php } ?>
+
+      </select>
+    </div>
+  </div> -->
+
+ 
+
+  <!-- <div class="form-group row">
     <label for="text4" class="col-4 col-form-label">Kategori</label> 
     <div class="col-8">
       <input id="text5" name="kategori_id" placeholder="Isi Deskripsi/Penjelasan" type="text" class="form-control" value="<?= $row['nama_kategori']; ?>" />
     </div>
-  </div>
+  </div> -->
 
   <div class="form-group row">
     <label for="text4" class="col-4 col-form-label">Jawaban</label> 
     <div class="col-8">
-      <input id="text6" name="jawaban" placeholder="Isi Jawaban" type="text" class="form-control" value="<?= $row['jawabani']; ?>" />
+      <input id="text6" name="jawaban" placeholder="Isi Jawaban" type="text" class="form-control" value="<?= $row['jawaban']; ?>" />
     </div>
   </div>
 

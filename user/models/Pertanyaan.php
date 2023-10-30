@@ -20,7 +20,7 @@ class Pertanyaan{
     FROM
     pertanyaan
     INNER JOIN user ON pertanyaan.user_id = user.id
-    INNER JOIN kategori ON pertanyaan.kategori_id = kategori.id";
+    INNER JOIN kategori ON pertanyaan.kategori_id = kategori.id;";
     //menggunakan mekanisme prepare statement PDO
     $ps = $this->koneksi->prepare($sql);
     $ps->execute();

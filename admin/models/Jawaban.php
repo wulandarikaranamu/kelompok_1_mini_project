@@ -56,7 +56,7 @@ public function simpan($data){
     $ps->execute($data);
 }
 public function ubah($data){
-    $sql = "UPDATE pertanyaan SET gejala=?, keluhan=?, deskripsi= ?, user_id=?, kategori_id=?, jawaban=? WHERE id=?";
+    $sql = "UPDATE pertanyaan SET gejala=?, keluhan=?, deskripsi= ?, jawaban=? WHERE id=?";
      $ps = $this->koneksi->prepare($sql);
      $ps->execute($data);
 
