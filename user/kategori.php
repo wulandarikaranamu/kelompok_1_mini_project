@@ -1,8 +1,6 @@
 <?php
 $model = new Kategori();
 $data_kategori = $model->dataKategori();
-
-
 ?>
 
 <main id="main" class="main">
