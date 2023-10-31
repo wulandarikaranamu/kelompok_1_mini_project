@@ -1,3 +1,7 @@
+<?php
+require_once 'models/Member.php';
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
