@@ -1,23 +1,13 @@
 <?php
 // Buat koneksi ke database
-$host = "localhost";
-$username = "root";
-$password = "";
-$database = "db_kes";
-
-$conn = new mysqli($host, $username, $password, $database);
-
-if ($conn->connect_error) {
-    die("Koneksi ke database gagal: " . $conn->connect_error);
-}
-
+include_once 'koneksi.php';
 // Tangkap data dari form registrasi
 $nama = $_POST['nama'];
 $umur = $_POST['umur'];
 $jenis_kelamin = $_POST['jenis_kelamin'];
 $email = $_POST['email'];
 $password = $_POST['password'];
-$role = "admin"; 
+$role = "user"; 
 $hashedPassword = sha1(md5(sha1($password)));
 
 // Simpan data ke tabel User
