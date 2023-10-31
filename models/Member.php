@@ -8,7 +8,7 @@ class Member{
     }
 
     public function cekLogin($data){
-        $sql = "SELECT * FROM User WHERE email = ? AND password = ? ";
+        $sql = "SELECT * FROM user WHERE email = ? AND password = ? ";
         $ps = $this->koneksi->prepare($sql);
         $ps->execute($data);
         $rs = $ps->fetch();

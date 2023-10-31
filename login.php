@@ -65,7 +65,7 @@
                     <p class="text-center small">Enter your email and password to log in</p> <!-- Update the description -->
                   </div>
 
-                  <form class="row g-3 needs-validation" novalidate action="login_process.php" method="POST"> <!-- Update the action attribute to the login process -->
+                  <form class="row g-3 needs-validation" novalidate action="member_controller.php" method="POST"> <!-- Update the action attribute to the login process -->
 
                     <div class="col-12">
                       <label for="yourEmail" class="form-label">Email</label> <!-- Change the label -->
