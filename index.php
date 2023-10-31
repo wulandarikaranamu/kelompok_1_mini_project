@@ -3,6 +3,7 @@ session_start();
 include_once 'koneksi.php';
 include_once 'index.php';
 include_once 'models/Gejala.php';
+include_once 'models/Member.php';
 
 $model = new Gejala();
 $data_gejala = $model->dataGejala();
