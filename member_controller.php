@@ -12,10 +12,15 @@ $obj = new Member();
 $rs = $obj->cekLogin($data);
 
 if(!empty($rs)){
-    $_SESSION['admin'] = $rs;
-    header('Location: admin/index.php?url=kategori');
-}else{
-    $_SESSION['user'] = $rs;
-    header('Location: user/index.php?url=kategori');
+    if($rs['role'] === 'admin') {
+        $_SESSION['admin'] = $rs;
+        header('Location: admin/index.php?url=kategori');
+    } else {
+        $_SESSION['user'] = $rs;
+        header('Location: user/index.php?url=kategori');
+    }
+} else {
+    // Atur header ke halaman login jika tidak ada informasi sesi
+    header('Location: index.php?url=home');
 }
 ?>

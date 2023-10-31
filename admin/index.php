@@ -1,4 +1,5 @@
 <?php
+session_start();
 include_once 'models/Pertanyaan.php';
 include_once '../koneksi.php';
 include_once 'navbar/top.php';
@@ -10,8 +11,9 @@ include_once 'models/Gejala.php';
 include_once 'models/User.php';
 
 
-// $sesi = $_SESSION['admin'];
-// if (isset($sesi)) {
+$sesi = $_SESSION['admin'];
+if(isset($sesi)){
+
 ?>
 
 
@@ -45,7 +47,7 @@ include_once 'models/User.php';
 <?php
 include_once 'navbar/footer.php';
 
-// } else {
-//     echo '<script>alert("anda tidak boleh masuk");history.back();</script>';
-// }
+} else {
+    echo '<script>alert("anda tidak boleh masuk");history.back();</script>';
+}
 ?>
