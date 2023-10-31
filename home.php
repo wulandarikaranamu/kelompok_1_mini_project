@@ -64,7 +64,7 @@
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#doctors">Team</a></li>
+          <li><a class="nav-link scrollto" href="#doctors">Developer</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -219,24 +219,25 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>Team</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <h2>Developer</h2>
+          <p></p>
         </div>
 
         <div class="row">
 
           <div class="col-lg-6">
             <div class="member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/doctors/doctors-1.jpg" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="./assets/img/developer/yohan.jpg" class="img-fluid" alt=""></div>
               <div class="member-info">
-                <h4>Walter White</h4>
-                <span>Chief Medical Officer</span>
-                <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                <h4>Yohan Dwi Bachtiar</h4>
+                <span>Web Developer</span>
+                <p>Universitas papua</p>
                 <div class="social">
-                  <a href=""><i class="ri-twitter-fill"></i></a>
-                  <a href=""><i class="ri-facebook-fill"></i></a>
-                  <a href=""><i class="ri-instagram-fill"></i></a>
-                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                  <!-- <a href=""><i class="ri-twitter-fill"></i></a> -->
+                  <!-- <a href=""><i class="ri-facebook-fill"></i></a> -->
+                  <a href="https://www.instagram.com/yohan.bachtiarr/"><i class="ri-instagram-fill"></i></a>
+                  <!-- <a href=""> <i class="ri-linkedin-box-fill"></i> </a> -->
+                  <a href="https://api.whatsapp.com/send?phone=6282338012337"> <i class="ri-whatsapp-fill"></i> </a>
                 </div>
               </div>
             </div>
@@ -244,16 +245,17 @@
 
           <div class="col-lg-6 mt-4 mt-lg-0">
             <div class="member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/doctors/doctors-2.jpg" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="./assets/img/developer/merry.jpg" class="img-fluid" alt=""></div>
               <div class="member-info">
-                <h4>Sarah Jhonson</h4>
-                <span>Anesthesiologist</span>
-                <p>Aut maiores voluptates amet et quis praesentium qui senda para</p>
+                <h4>Merry Wulansari. S</h4>
+                <span>Web Developer</span>
+                <p>Universitas Sulawesi Barat</p>
                 <div class="social">
-                  <a href=""><i class="ri-twitter-fill"></i></a>
-                  <a href=""><i class="ri-facebook-fill"></i></a>
-                  <a href=""><i class="ri-instagram-fill"></i></a>
-                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                  <!-- <a href=""><i class="ri-twitter-fill"></i></a> -->
+                  <!-- <a href=""><i class="ri-facebook-fill"></i></a> -->
+                  <a href="https://instagram.com/mryy_wlndriii?igshid=OGQ5ZDc2ODk2ZA=="><i class="ri-instagram-fill"></i></a>
+                  <!-- <a href=""> <i class="ri-linkedin-box-fill"></i> </a> -->
+                  <a href="https://api.whatsapp.com/send?phone=6285240591592"> <i class="ri-whatsapp-fill"></i> </a>
                 </div>
               </div>
             </div>
@@ -261,16 +263,17 @@
 
           <div class="col-lg-6 mt-4">
             <div class="member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/doctors/doctors-3.jpg" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="./assets/img/developer/agus.jpg" class="img-fluid" alt=""></div>
               <div class="member-info">
-                <h4>William Anderson</h4>
-                <span>Cardiology</span>
-                <p>Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
+                <h4>Agus Abdul Manan Hamas</h4>
+                <span>Web Develover</span>
+                <p>Universitas AMIKOM Purwokerto</p>
                 <div class="social">
-                  <a href=""><i class="ri-twitter-fill"></i></a>
-                  <a href=""><i class="ri-facebook-fill"></i></a>
-                  <a href=""><i class="ri-instagram-fill"></i></a>
-                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                  <!-- <a href=""><i class="ri-twitter-fill"></i></a> -->
+                  <!-- <a href=""><i class="ri-facebook-fill"></i></a> -->
+                  <a href="https://instagram.com/manan_mn17?igshid=OGQ5ZDc2ODk2ZA=="><i class="ri-instagram-fill"></i></a>
+                  <!-- <a href=""> <i class="ri-linkedin-box-fill"></i> </a> -->
+                  <a href="https://api.whatsapp.com/send?phone=6285228540244"> <i class="ri-whatsapp-fill"></i> </a>
                 </div>
               </div>
             </div>
@@ -278,16 +281,17 @@
 
           <div class="col-lg-6 mt-4">
             <div class="member d-flex align-items-start">
-              <div class="pic"><img src="assets/img/doctors/doctors-4.jpg" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="./assets/img/developer/try.jpg" class="img-fluid" alt=""></div>
               <div class="member-info">
-                <h4>Amanda Jepson</h4>
-                <span>Neurosurgeon</span>
-                <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
+                <h4>Try Wahyudi Saputra</h4>
+                <span>Web Developer</span>
+                <p>Politeknik Negeri Sriwijaya</p>
                 <div class="social">
-                  <a href=""><i class="ri-twitter-fill"></i></a>
-                  <a href=""><i class="ri-facebook-fill"></i></a>
-                  <a href=""><i class="ri-instagram-fill"></i></a>
-                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                  <!-- <a href=""><i class="ri-twitter-fill"></i></a> -->
+                  <!-- <a href=""><i class="ri-facebook-fill"></i></a> -->
+                  <a href="https://instagram.com/trywahyudi__?utm_source=qr&igshid=MzNlNGNkZWQ4Mg=="><i class="ri-instagram-fill"></i></a>
+                  <!-- <a href=""> <i class="ri-linkedin-box-fill"></i> </a> -->
+                  <a href="https://api.whatsapp.com/send?phone=6289602255585"> <i class="ri-whatsapp-fill"></i> </a>
                 </div>
               </div>
             </div>
@@ -308,7 +312,7 @@
             <div class="swiper-slide">
               <div class="testimonial-wrap">
                 <div class="testimonial-item">
-                  <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                  <!-- <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt=""> -->
                   <h3>Saul Goodman</h3>
                   <h4>Ceo &amp; Founder</h4>
                   <p>
@@ -323,7 +327,7 @@
             <div class="swiper-slide">
               <div class="testimonial-wrap">
                 <div class="testimonial-item">
-                  <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                  <!-- <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt=""> -->
                   <h3>Sara Wilsson</h3>
                   <h4>Designer</h4>
                   <p>
@@ -338,7 +342,7 @@
             <div class="swiper-slide">
               <div class="testimonial-wrap">
                 <div class="testimonial-item">
-                  <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                  <!-- <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt=""> -->
                   <h3>Jena Karlis</h3>
                   <h4>Store Owner</h4>
                   <p>
@@ -353,7 +357,7 @@
             <div class="swiper-slide">
               <div class="testimonial-wrap">
                 <div class="testimonial-item">
-                  <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                  <!-- <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt=""> -->
                   <h3>Matt Brandon</h3>
                   <h4>Freelancer</h4>
                   <p>
@@ -368,7 +372,7 @@
             <div class="swiper-slide">
               <div class="testimonial-wrap">
                 <div class="testimonial-item">
-                  <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                  <!-- <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt=""> -->
                   <h3>John Larson</h3>
                   <h4>Entrepreneur</h4>
                   <p>
