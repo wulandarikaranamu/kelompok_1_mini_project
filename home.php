@@ -10,7 +10,7 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
+  <link href="admin/assets/img/logoku.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
@@ -78,7 +78,8 @@
   <section id="hero" class="d-flex align-items-center">
     <div class="container">
       <h1>Welcome to CEKES</h1>
-      <h2>We are team of talented designers making websites with Bootstrap</h2>
+      <h2>We are an experienced medical team with an innovative
+      <br> approach to health care</h2>
       <a href="#registrasi" class="btn-get-started scrollto">Registrasi</a>
     </div>
   </section><!-- End Hero -->
@@ -92,10 +93,10 @@
         <div class="row">
           <div class="col-lg-4 d-flex align-items-stretch">
             <div class="content">
-              <h3>Why Choose Medilab?</h3>
+              <h3>Why Choose Cekkes?</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
-                Asperiores dolores sed et. Tenetur quia eos. Autem tempore quibusdam vel necessitatibus optio ad corporis.
+              Website cek kesehatan memberikan akses mudah ke informasi medis yang dapat membantu Anda memahami gejala, penyakit, dan perawatan kesehatan. 
+              Anda dapat mengaksesnya kapan saja dan di mana saja tanpa harus menunggu janji dokter.
               </p>
               <div class="text-center">
                 <a href="#" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a>
@@ -108,22 +109,22 @@
                 <div class="col-xl-4 d-flex align-items-stretch">
                   <div class="icon-box mt-4 mt-xl-0">
                     <i class="bx bx-receipt"></i>
-                    <h4>Corporis voluptates sit</h4>
-                    <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+                    <h4>Prakiraan Penyakit</h4>
+                    <p>Meskipun ini hanya sebagai panduan awal, ini dapat membantu Anda memahami kemungkinan kondisi yang perlu diperiksa lebih lanjut.</p>
                   </div>
                 </div>
                 <div class="col-xl-4 d-flex align-items-stretch">
                   <div class="icon-box mt-4 mt-xl-0">
                     <i class="bx bx-cube-alt"></i>
-                    <h4>Ullamco laboris ladore pan</h4>
-                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                    <h4>Kesadaran Kesehatan</h4>
+                    <p>Dengan memahami risiko dan gejala penyakit tertentu, Anda dapat mengambil tindakan pencegahan yang tepat.</p>
                   </div>
                 </div>
                 <div class="col-xl-4 d-flex align-items-stretch">
                   <div class="icon-box mt-4 mt-xl-0">
                     <i class="bx bx-images"></i>
-                    <h4>Labore consequatur</h4>
-                    <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
+                    <h4>Konsultasi Jarak Jauh</h4>
+                    <p> Ini bisa sangat bermanfaat, terutama jika Anda sulit mengakses perawatan medis secara langsung.</p>
                   </div>
                 </div>
               </div>
@@ -144,25 +145,25 @@
           </div>
 
           <div class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
-            <h3>Enim quis est voluptatibus aliquid consequatur fugiat</h3>
-            <p>Esse voluptas cumque vel exercitationem. Reiciendis est hic accusamus. Non ipsam et sed minima temporibus laudantium. Soluta voluptate sed facere corporis dolores excepturi. Libero laboriosam sint et id nulla tenetur. Suscipit aut voluptate.</p>
+            <h3>Kesehatan Anda Prioritas Kami Menyediakan Solusi Inovatif</h3>
+            <p>Kami berkomitmen untuk memberikan solusi kesehatan yang mengutamakan kenyamanan dan keselamatan. Layanan kami didasarkan pada prinsip kepedulian dan inovasi. Kami merancang pengalaman yang bebas dari stres dan memprioritaskan kesejahteraan Anda. Kami hadir untuk membantu Anda mencapai kesehatan yang optimal dengan informasi, perawatan, dan dukungan yang sesuai.</p>
 
             <div class="icon-box">
-              <div class="icon"><i class="bx bx-fingerprint"></i></div>
-              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+              <div class="icon"><i class="fa-sharp fa-solid fa-book-medical"></i></div>
+              <h4 class="title"><a href="#about">Ketegori</a></h4>
+              <p class="description"> Situs web ini menyediakan informasi tentang berbagai kondisi medis, gejala, diagnosa, dan perawatan. Mereka bertujuan untuk memberikan pengetahuan medis kepada pengguna.</p>
             </div>
 
             <div class="icon-box">
-              <div class="icon"><i class="bx bx-gift"></i></div>
-              <h4 class="title"><a href="">Nemo Enim</a></h4>
-              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+              <div class="icon"><i class="fa-sharp fa-solid fa-stethoscope"></i></div>
+              <h4 class="title"><a href="#about">Gejala</a></h4>
+              <p class="description">Pengguna dapat memasukkan gejala yang mereka alami, dan situs ini memberikan informasi tentang kemungkinan penyakit atau kondisi yang mungkin mendasarinya.</p>
             </div>
 
             <div class="icon-box">
-              <div class="icon"><i class="bx bx-atom"></i></div>
-              <h4 class="title"><a href="">Dine Pad</a></h4>
-              <p class="description">Explicabo est voluptatum asperiores consequatur magnam. Et veritatis odit. Sunt aut deserunt minus aut eligendi omnis</p>
+              <div class="icon"><i class="fa-solid fa-notes-medical"></i></div>
+              <h4 class="title"><a href="#about">Penyakit</a></h4>
+              <p class="description">Situs web ini dapat membantu pengguna menilai risiko mereka terhadap penyakit tertentu berdasarkan riwayat kesehatan dan gaya hidup mereka.</p>
             </div>
 
           </div>
