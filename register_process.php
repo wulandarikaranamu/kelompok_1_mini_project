@@ -17,10 +17,11 @@ $umur = $_POST['umur'];
 $jenis_kelamin = $_POST['jenis_kelamin'];
 $email = $_POST['email'];
 $password = $_POST['password'];
-$role = "user"; // Anda bisa menambahkan logika peran (role) sesuai kebutuhan
+$role = "user"; 
+$hashedPassword = sha1(md5(sha1($password)));
 
 // Simpan data ke tabel User
-$query = "INSERT INTO User (nama, umur, jenis_kelamin, email, password, role) VALUES ('$nama', '$umur', '$jenis_kelamin', '$email', '$password', '$role')";
+$query = "INSERT INTO User (nama, umur, jenis_kelamin, email, password, role) VALUES ('$nama', '$umur', '$jenis_kelamin', '$email', '$hashedPassword', '$role')";
 
 if ($conn->query($query) === TRUE) {
     // Pendaftaran berhasil, arahkan ke halaman login
