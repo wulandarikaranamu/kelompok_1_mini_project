@@ -93,7 +93,7 @@
         <div class="row">
           <div class="col-lg-4 d-flex align-items-stretch">
             <div class="content">
-              <h3>Why Choose Cekkes?</h3>
+              <h3>Why Choose Cekes?</h3>
               <p>
               Website cek kesehatan memberikan akses mudah ke informasi medis yang dapat membantu Anda memahami gejala, penyakit, dan perawatan kesehatan. 
               Anda dapat mengaksesnya kapan saja dan di mana saja tanpa harus menunggu janji dokter.
