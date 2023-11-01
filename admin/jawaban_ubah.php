@@ -52,8 +52,8 @@ if (!empty($idedit)) {
 <h4 align="center">Update</h4>
 <form action="jawaban_controller.php" method="POST">
 
-    <label for="text4" class="col-4 col-form-label"></label> 
-      <input id="text5" name="id" placeholder="Isi Deskripsi/Penjelasan" type="hidden" class="form-control" value="<?= $row['id']; ?>" />
+    <label for="text0" class="col-4 col-form-label"></label> 
+      <input id="text0" name="id" placeholder="Isi Deskripsi/Penjelasan" type="hidden" class="form-control" value="<?= $row['id']; ?>" />
 
 
   
@@ -64,13 +64,13 @@ if (!empty($idedit)) {
     </div>
   </div>
   <div class="form-group row">
-    <label for="text" class="col-4 col-form-label">Masukkan Keluhan</label> 
+    <label for="text2" class="col-4 col-form-label">Masukkan Keluhan</label> 
     <div class="col-8">
       <input id="text2" name="keluhan" placeholder="Isi Keluhan" type="text" class="form-control" value="<?= $row['keluhan']; ?>" />
     </div>
   </div>
   <div class="form-group row">
-    <label for="text2" class="col-4 col-form-label">Masukkan Deskripsi/Penjelasan</label> 
+    <label for="text3" class="col-4 col-form-label">Masukkan Deskripsi/Penjelasan</label> 
     <div class="col-8">
       <input id="text3" name="deskripsi" placeholder="Isi Deskripsi/Penjelasan" type="text" class="form-control" value="<?= $row['deskripsi']; ?>" />
     </div>
@@ -118,7 +118,7 @@ if (!empty($idedit)) {
   </div> -->
 
   <div class="form-group row">
-    <label for="text4" class="col-4 col-form-label">Jawaban</label> 
+    <label for="text6" class="col-4 col-form-label">Jawaban</label> 
     <div class="col-8">
       <input id="text6" name="jawaban" placeholder="Isi Jawaban" type="text" class="form-control" value="<?= $row['jawaban']; ?>" />
     </div>

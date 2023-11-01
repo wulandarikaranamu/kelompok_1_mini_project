@@ -1,7 +1,7 @@
 <?php  
 
 include_once '../koneksi.php';
-include_once 'models/pertanyaan.php';
+include_once 'models/Pertanyaan.php';
 
 $gejala = $_POST['gejala'];
 $keluhan = $_POST['keluhan'];
@@ -14,7 +14,7 @@ $data = [
     $gejala, $keluhan, $deskripsi, $user_id, $kategori_id
 ];
 
-$model = new pertanyaan();
+$model = new Pertanyaan();
 $tombol = $_REQUEST['proses'];
 
 switch ($tombol) {

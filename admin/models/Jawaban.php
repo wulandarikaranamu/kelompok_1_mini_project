@@ -1,5 +1,4 @@
-
- <?php 
+<?php 
 
 class Jawaban{
     private $koneksi;
@@ -68,5 +67,4 @@ public function hapus($data){
  }
 
 }
-
 ?>

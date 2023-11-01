@@ -289,7 +289,7 @@
         </ul>
         <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="index.php?url=gejala">
+            <a href="index.php?url=Gejala">
               <i class="bi bi-circle"></i><span> Gejala</span>
             </a>
           </li>
@@ -330,7 +330,7 @@
         </a>
         <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="index.php?url=jawaban">
+            <a href="index.php?url=Jawaban">
               <i class="bi bi-circle"></i><span>Jawaban</span>
             </a>
           </li>
