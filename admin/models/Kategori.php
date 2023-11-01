@@ -35,7 +35,12 @@ class Kategori{
         $row = $ps->rowCount();
         return $row;
     }
+    public function save($data){
+        $sql = "INSERT INTO kategori (nama_kategori) 
+        VALUES(?)";
+        $ps = $this->koneksi->prepare($sql);
+        $ps->execute($data);
 
 }
-
+}
 ?>

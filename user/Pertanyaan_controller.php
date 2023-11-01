@@ -1,5 +1,4 @@
 <?php  
-
 include_once '../koneksi.php';
 include_once 'models/Pertanyaan.php';
 

@@ -27,6 +27,13 @@ $data_kategori = $model->dataKategori();
             <h5 class="card-title"></h5>
             <p></p>
 
+            <!-- tombol -->
+<div class="card mb-4">
+ <div class="card-header">
+     <a href="index.php?url=kategori_form">
+         <button class="btn btn-sm btn-primary">Tambah</button>
+       </a>
+    </div>
             <!-- Table with stripped rows -->
             <table class="table datatable">
              <thead>

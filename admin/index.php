@@ -5,7 +5,7 @@ include_once '../koneksi.php';
 include_once 'navbar/top.php';
 include_once 'index.php';
 include_once 'models/Kategori.php';
-include_once 'models/Pertanyaan.php';
+include_once 'models/Form_kategori.php';
 include_once 'models/Jawaban.php';
 include_once 'models/Gejala.php';
 include_once 'models/User.php';
