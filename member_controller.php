@@ -15,7 +15,7 @@ if(!empty($rs)){
     if($rs['role'] === 'admin') {
         $_SESSION['admin'] = $rs;
         header('Location: admin/index.php?url=kategori');
-    } else {
+    } else if($rs['role'] === 'user') {
         $_SESSION['user'] = $rs;
         header('Location: user/index.php?url=kategori');
     }

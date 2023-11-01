@@ -1,13 +1,11 @@
 <?php  
-
+error_reporting(0);
 include_once '../koneksi.php';
 include_once 'models/Jawaban.php';
 
 $gejala = $_POST['gejala'];
 $keluhan = $_POST['keluhan'];
 $deskripsi = $_POST['deskripsi'];
-// $user_id = $_POST['user_id'];
-// $kategori_id = $_POST['kategori_id'];
 $jawaban = $_POST['jawaban'];
 $id = $_POST['id'];
 
@@ -28,11 +26,9 @@ switch ($tombol) {
         $data[] = $_POST['id'];
         $model->hapus($data);break;
     default:
-        header('location:index.php?url=jawaban');
+        header('location:index.php?url=Jawaban');
         break;
 }
 
-header('location:index.php?url=jawaban');
-
-
+header('location:index.php?url=Jawaban');
 ?>
