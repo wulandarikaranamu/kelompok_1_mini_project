@@ -12,7 +12,7 @@ include_once 'models/User.php';
 
 
 $sesi = $_SESSION['admin'];
-if(isset($sesi)){
+if(!isset($sesi)){
 
 ?>
 

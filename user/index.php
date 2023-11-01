@@ -11,7 +11,7 @@ include_once 'models/User.php';
 include_once 'models/Form_pertanyaan.php';
 
 $sesi = $_SESSION['user'];
-if(isset($sesi)){
+if(!isset($sesi)){
 
 ?>
 
