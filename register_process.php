@@ -1,6 +1,8 @@
 <?php
 // Buat koneksi ke database
 include_once 'koneksi.php';
+include_once 'config.php';
+
 // Tangkap data dari form registrasi
 $nama = $_POST['nama'];
 $umur = $_POST['umur'];
